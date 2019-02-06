@@ -1,0 +1,2 @@
+alertOke();
+oke();
