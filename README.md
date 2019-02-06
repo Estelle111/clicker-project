@@ -8,32 +8,32 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 	* scss
 	* functions
 
-* merge request only on EXPERIMENTAL branch
+* merge request only on **experimental** branch
 
-* Always work with the INDEX-LIST
+* Always work with the **index-list**
   For each ID, class, function, variable,... creation => add it on INDEX-LIST
 
 * 2 meetings / day
 
 ## Tasks assignment
-**Crum master** : Estelle
+**Scrum master** : **Estelle**
 * communication management within the team
 * smooth project and timing
 * README.md
 
-**Product checker** : Maxime
-* tasks management and timing
+**Product checker** : **Maxime**
+* features pusher
 
-**Corrector** : Alexandre
-* master project management
+**Corrector** : **Alexandre**
+* master branch management
 * code checking of everyone to improve them if necessary
 
-**Testers** : Matthieu & Magid
+**Testers** : **Matthieu** & **Magid**
 * bugs management 
 * try to crack the code to check if everything is holding
 
-**Indexer** : Maxime
-* INDEX-LIST creation and  management
+**Indexer** : **Maxime**
+* index-list creation and management
  
 
 ## Built With
