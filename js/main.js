@@ -4,9 +4,13 @@ window.onload = () => {
     gameFlow();
     // Main Function 
     function gameFlow(){
-        // 
-        // INSERT CLICK FUNCTION HERE
-        // 
+        // Create event listener on click button
+        clickBtn = document.querySelector('#hClick')
+        clickBtn.addEventListener('click', () => {
+            game.increaseScore();
+            game.updateAffichageScore();
+        })
+        // Create event listener on multiply button
         multBtn = document.querySelector('#hMultiplier')
         multObject = game.multiplier
         multBtn.addEventListener("click",() => {
