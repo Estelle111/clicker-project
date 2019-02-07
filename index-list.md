@@ -18,6 +18,8 @@ The list is divided into sections, as follow :
 
 | Name | Location | Description |
 | ---- | -------- | ----------- |
+| testBuyableMultiplier | main.js | Check if possible multiplier buy (score > 0) |
+| updateAffichageScore | main.js | Update score display on index.html |
 
 ## HTML Classes
 
@@ -28,3 +30,4 @@ The list is divided into sections, as follow :
 
 | Name | Location | Description |
 | ---- | -------- | ----------- |
+| score | index.html | Display score in html |
