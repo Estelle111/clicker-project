@@ -23,7 +23,15 @@ The list is divided into sections, as follow :
 
 | Name | Location | Description |
 | ---- | -------- | ----------- |
-| score | index.html | Display score in html |
+| page | index.html | contain all html |
+| main | index.html | contain score / score/sec / click |
+| hScore | index.html | display score |
+| hPerSecond | index.html | display score per second |
+| hClick | index.html | click button |
+| supplement | index.html | contain multi / autoclickers / bonus |
+| hMultiplier | index.html | multiplier button |
+| hAutoclick | index.html | auto clicker button |
+| hBonus | index.html | bonus button |
 
 ## Objects
 
