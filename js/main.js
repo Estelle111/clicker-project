@@ -11,6 +11,7 @@ window.onload = () => {
         multObject = game.multiplier
         multBtn.addEventListener("click",() => {
             if (game.isBuyable(game.score,multObject.price) == true) { 
+                game.score = game.payForUpgrade(game.score,multObject.price)
                 multObject.price = multObject.evolPrice(multObject.price)
                 multObject.level = multObject.evolLevel(multObject.level)
                 multObject.increase = multObject.evolIncrease(multObject.increase)
@@ -38,6 +39,10 @@ window.onload = () => {
         // Increase score by multiplier
         this.increaseScore = function(){
             this.score += this.multiplier.increase;
+        }
+        // Decreases user score to pay for an upgrade
+        this.payForUpgrade() = function(score,price){      
+            return (score - price)      
         }
     }
 
