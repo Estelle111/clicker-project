@@ -7,9 +7,9 @@ The list is divided into sections, as follow :
 * HTML IDs
 * Objects
 * For each object :
-..* Properties
-..* Children 
-..* Methods
+⋅⋅* Properties
+⋅⋅* Children 
+⋅⋅* Methods
 
 ## To Sort
 
