@@ -52,7 +52,7 @@ The list is divided into sections, as follow :
 | ---- | --------- | ------ | ----------- |
 | isBuyable | score , price | boolean | Checks if score > price, returns true if so |
 | updateAffichageScore | score | none | changes the inner html to display the user score |
-| increaseScore | | | Increases the value of the score when the user clicks |
+| increaseScore | none | none | Increases the value of the score when the user clicks |
 
 ### Multiple
 
@@ -61,7 +61,8 @@ The list is divided into sections, as follow :
 | Name | Description |
 | ---- | ----------- |
 | price | Price of the upgrade |
-| level | Actual value of the upgrade |
+| level | Number of increments |
+| increase | Actual value of the upgrade |
 
 #### Children
 
@@ -75,3 +76,4 @@ The list is divided into sections, as follow :
 | ---- | --------- | ------ | ----------- |
 | evolPrice | price | newPrice | Function used to increase the price of the update |
 | evolLevel | level | newLevel | Function used to increase the level of the multiplier |
+| evolIncrease | increase | newIncrease | Function used to increase the score of the multiplier |

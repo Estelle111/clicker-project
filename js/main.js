@@ -18,17 +18,25 @@ window.onload = () => {
         this.updateAffichageScore = function (score) {
             document.querySelector('#score').innerHTML(score)
         }
-        this.increaseScore = function(){}
+
+        // Increase score by multiplier
+        this.increaseScore = function(){
+            this.score += this.multiplier.increase;
+        }
     }
 
-    function Multiple(price, level){
+    function Multiple(price, level, increase){
         this.price = price;
         this.level = level;
+        this.increase = increase;
         this.evolPrice = function(price){
             return price*2
         }
         this.evolLevel = function(level){
             return level*2
+        }
+        this.evolIncrease = function(increase){
+            return increase*2
         }
     }
 }
