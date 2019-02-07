@@ -13,6 +13,8 @@ window.onload = () => {
             if (game.isBuyable(game.score,multObject.price == true)) { 
                 multObject.price = multObject.evolPrice(multObject.price)
                 multObject.level = multObject.evolLevel(multObject.level)
+                multObject.increase = multObject.evolIncrease(multObject.increase)
+                multObject.updateAffichageMultiple();
             }
         })
     }
@@ -54,7 +56,7 @@ window.onload = () => {
         }
         // Update multiple display on index.html
         this.updateAffichageMultiple = function () {
-            document.querySelector('#hMultiplier').innerHTML(this.level)
+            document.querySelector('#hMultiplier').innerHTML(this.increase);
         }
     }
 }
