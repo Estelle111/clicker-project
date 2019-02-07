@@ -9,7 +9,7 @@ The list is divided into sections, as follow :
 * HTML IDs
 
 ## To Sort
-isBuyable, updateaffichescore
+
 
 ## HTML Classes
 
