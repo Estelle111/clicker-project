@@ -1,14 +1,15 @@
 window.onload = () => {
 
-    var game = new Game(0);
+    game = new Game(49);
     gameFlow();
     // Main Function 
     function gameFlow(){
         // Create event listener on click button
         clickBtn = document.querySelector('#hClick')
         clickBtn.addEventListener('click', () => {
+            console.log(game.score)
             game.increaseScore();
-            game.updateAffichageScore();
+            game.updateAffichageScore(game.score);
         })
         // Create event listener on multiply button
         multBtn = document.querySelector('#hMultiplier')
@@ -20,12 +21,14 @@ window.onload = () => {
                 multObject.level = multObject.evolLevel(multObject.level)
                 multObject.increase = multObject.evolIncrease(multObject.increase)
                 multObject.updateAffichageMultiple();
+                game.updateAffichageScore(game.score);
+
             }
         })
     }
     function Game(score){
         this.score = score
-        this.multiplier = new Multiple(50,1)
+        this.multiplier = new Multiple(50,1,1)
         // Check if possible buy (score > 0)
         // return false if too expensive, true else
         this.isBuyable = function(score,price){
@@ -36,16 +39,16 @@ window.onload = () => {
             }
         }
         // Update score display on index.html
-        this.updateAffichageScore = function () {
-            document.querySelector('#score').innerHTML(this.score)
+        this.updateAffichageScore = function (score) {
+            document.querySelector('#hScore').innerHTML = score.toFixed(2)
         }
 
         // Increase score by multiplier
         this.increaseScore = function(){
-            this.score += this.multiplier.increase;
+            this.score += this.multiplier.increase
         }
         // Decreases user score to pay for an upgrade
-        this.payForUpgrade() = function(score,price){      
+        this.payForUpgrade = function(score,price){      
             return (score - price)      
         }
     }
@@ -61,11 +64,11 @@ window.onload = () => {
             return level+1;
         }
         this.evolIncrease = function(increase){
-            return increase*2
+            return increase*1.1
         }
         // Update multiple display on index.html
         this.updateAffichageMultiple = function () {
-            document.querySelector('#hMultiplier').innerHTML('X' + this.increase + ' | ' + this.price);
+            document.querySelector('#hMultiplier').innerHTML = 'X' + this.increase.toFixed(2) + ' | ' + this.price.toFixed(2);
         }
     }
 }
