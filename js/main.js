@@ -22,7 +22,6 @@ window.onload = () => {
                 multObject.increase = multObject.evolIncrease(multObject.increase)
                 multObject.updateAffichageMultiple();
                 game.updateAffichageScore(game.score);
-
             }
         })
     }
@@ -57,12 +56,15 @@ window.onload = () => {
         this.price = price;
         this.level = level;
         this.increase = increase;
+        // update price multiply
         this.evolPrice = function(price){
             return price*1.15;
         }
+        // update level multiply (number of time hit)
         this.evolLevel = function(level){
             return level+1;
         }
+        // update increase multiply (used to augment clic score)
         this.evolIncrease = function(increase){
             return increase*1.1
         }
