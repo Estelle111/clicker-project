@@ -56,7 +56,7 @@ window.onload = () => {
         }
         // Update multiple display on index.html
         this.updateAffichageMultiple = function () {
-            document.querySelector('#hMultiplier').innerHTML(this.increase);
+            document.querySelector('#hMultiplier').innerHTML('X' + this.increase + ' | ' + this.price);
         }
     }
 }
