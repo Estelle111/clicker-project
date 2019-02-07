@@ -1,7 +1,21 @@
 window.onload = () => {
 
     var game = new Game(0);
-
+    gameFlow();
+    // Function 
+    function gameFlow(){
+        // 
+        // INSERT CLICK FUNCTION HERE
+        // 
+        multBtn = document.querySelector('#hMultiplier')
+        multObject = game.multiplier
+        multBtn.addEventListener("click",() => {
+            if (game.isBuyable(game.score,multObject.price == true)) { 
+                multObject.price = multObject.evolPrice(multObject.price)
+                multObject.level = multObject.evolLevel(multObject.level)
+            }
+        })
+    }
     function Game(score){
         this.score = score
         this.multiplier = new Multiple(50,1)
@@ -20,7 +34,6 @@ window.onload = () => {
         }
         this.increaseScore = function(){}
     }
-
     function Multiple(price, level){
         this.price = price;
         this.level = level;
