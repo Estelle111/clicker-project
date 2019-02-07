@@ -15,8 +15,8 @@ window.onload = () => {
             }
         }
         // Update score display on index.html
-        this.updateAffichageScore = function (score) {
-            document.querySelector('#score').innerHTML(score)
+        this.updateAffichageScore = function () {
+            document.querySelector('#score').innerHTML(this.score)
         }
         this.increaseScore = function(){}
     }
@@ -29,6 +29,9 @@ window.onload = () => {
         }
         this.evolLevel = function(level){
             return level*2
+        }
+        this.updateAffichageMultiple = function () {
+            document.querySelector('#hMultiplier').innerHTML(this.level)
         }
     }
 }
