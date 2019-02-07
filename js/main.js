@@ -2,7 +2,7 @@ window.onload = () => {
 
     var game = new Game(0);
     gameFlow();
-    // Function 
+    // Main Function 
     function gameFlow(){
         // 
         // INSERT CLICK FUNCTION HERE
