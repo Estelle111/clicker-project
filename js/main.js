@@ -10,7 +10,7 @@ window.onload = () => {
         multBtn = document.querySelector('#hMultiplier')
         multObject = game.multiplier
         multBtn.addEventListener("click",() => {
-            if (game.isBuyable(game.score,multObject.price == true)) { 
+            if (game.isBuyable(game.score,multObject.price) == true) { 
                 multObject.price = multObject.evolPrice(multObject.price)
                 multObject.level = multObject.evolLevel(multObject.level)
                 multObject.increase = multObject.evolIncrease(multObject.increase)
