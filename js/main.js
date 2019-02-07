@@ -1,7 +1,21 @@
 window.onload = () => {
 
     var game = new Game(0);
-
+    gameFlow();
+    // Main Function 
+    function gameFlow(){
+        // 
+        // INSERT CLICK FUNCTION HERE
+        // 
+        multBtn = document.querySelector('#hMultiplier')
+        multObject = game.multiplier
+        multBtn.addEventListener("click",() => {
+            if (game.isBuyable(game.score,multObject.price == true)) { 
+                multObject.price = multObject.evolPrice(multObject.price)
+                multObject.level = multObject.evolLevel(multObject.level)
+            }
+        })
+    }
     function Game(score){
         this.score = score
         this.multiplier = new Multiple(50,1)
@@ -15,8 +29,8 @@ window.onload = () => {
             }
         }
         // Update score display on index.html
-        this.updateAffichageScore = function (score) {
-            document.querySelector('#score').innerHTML(score)
+        this.updateAffichageScore = function () {
+            document.querySelector('#score').innerHTML(this.score)
         }
 
         // Increase score by multiplier
@@ -35,8 +49,9 @@ window.onload = () => {
         this.evolLevel = function(level){
             return level*2
         }
-        this.evolIncrease = function(increase){
-            return increase*2
+        // Update multiple display on index.html
+        this.updateAffichageMultiple = function () {
+            document.querySelector('#hMultiplier').innerHTML(this.level)
         }
     }
 }
