@@ -1,4 +1,4 @@
-# clicker-project
+# Clicker Project
 Welcome to our Clicker project, a game based on Cookie clicker.
 
 ## Guide line
@@ -10,8 +10,12 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 
 * merge request only on **experimental** branch
 
-* Always work with the **index-list**
+* Always work with the **[index-list](https://github.com/Estelle111/clicker-project/blob/experimental/index-list.md)**
   For each ID, class, function, variable,... creation => add it on INDEX-LIST
+
+* Watch the [todo list](https://github.com/Estelle111/clicker-project/projects/1) regularly and modify it if necessary
+
+* To link scss to css use the link **sh linkScss.sh** 
 
 * 2 meetings / day
 
