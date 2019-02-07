@@ -43,6 +43,7 @@ window.onload = () => {
         this.evolLevel = function(level){
             return level*2
         }
+        // Update multiple display on index.html
         this.updateAffichageMultiple = function () {
             document.querySelector('#hMultiplier').innerHTML(this.level)
         }
