@@ -8,6 +8,9 @@ The list is divided into sections, as follow :
 * HTML Classes
 * HTML IDs
 
+## To Sort
+isBuyable, updateaffichescore
+
 ## Variables
 
 | Name | Location | Description |
@@ -18,7 +21,7 @@ The list is divided into sections, as follow :
 
 | Name | Location | Description |
 | ---- | -------- | ----------- |
-| testBuyableMultiplier | main.js | Check if possible multiplier buy (score > 0) |
+| isBuyable | main.js | Check if possible buy (score > 0) |
 | updateAffichageScore | main.js | Update score display on index.html |
 
 ## HTML Classes
