@@ -13,7 +13,6 @@ The list is divided into sections, as follow :
 
 ## To Sort
 
-
 ## HTML Classes
 
 | Name | Location | Description |
@@ -31,6 +30,8 @@ The list is divided into sections, as follow :
 | ---- | ----- | ------ | -------- | ----------- |
 | game | Game | window | multiplier | Main object, the game itself |
 | multiplier | Multiple | game | none | Contains the data allowing us to increase the score multiplier per click |
+
+=====
 
 ### Game
 
@@ -53,6 +54,8 @@ The list is divided into sections, as follow :
 | isBuyable | score , price | boolean | Checks if score > price, returns true if so |
 | updateAffichageScore | score | none | changes the inner html to display the user score |
 | increaseScore | | | Increases the value of the score when the user clicks |
+
+=====
 
 ### Multiple
 
