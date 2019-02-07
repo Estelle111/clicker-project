@@ -66,8 +66,13 @@ The list is divided into sections, as follow :
 | Name | Arguments | Return | Description |
 | ---- | --------- | ------ | ----------- |
 | isBuyable | score , price | boolean | Checks if score > price, returns true if so |
+<<<<<<< HEAD
+| updateAffichageScore | score | none | changes the inner html to display the user score |
+| increaseScore | none | none | Increases the value of the score when the user clicks |
+=======
 | updateAffichageScore | none | none | changes the inner html to display the user score |
 | increaseScore | | | Increases the value of the score when the user clicks |
+>>>>>>> f45e76d995ff4dff15dbca290330ce1b1db2ad07
 
 ***
 
@@ -78,7 +83,8 @@ The list is divided into sections, as follow :
 | Name | Description |
 | ---- | ----------- |
 | price | Price of the upgrade |
-| level | Actual value of the upgrade |
+| level | Number of increments |
+| increase | Actual value of the upgrade |
 
 #### Children
 
@@ -92,4 +98,8 @@ The list is divided into sections, as follow :
 | ---- | --------- | ------ | ----------- |
 | evolPrice | price | newPrice | Function used to increase the price of the update |
 | evolLevel | level | newLevel | Function used to increase the level of the multiplier |
+<<<<<<< HEAD
+| evolIncrease | increase | newIncrease | Function used to increase the score of the multiplier |
+=======
 | updateAffichageMultiple | none | none | change the inner html to display the multiple level |
+>>>>>>> f45e76d995ff4dff15dbca290330ce1b1db2ad07
