@@ -44,10 +44,10 @@ window.onload = () => {
         this.level = level;
         this.increase = increase;
         this.evolPrice = function(price){
-            return price*2
+            return price*1.15;
         }
         this.evolLevel = function(level){
-            return level*2
+            return level+1;
         }
         this.evolIncrease = function(increase){
             return increase*2
