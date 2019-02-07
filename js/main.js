@@ -15,15 +15,15 @@ window.onload = () => {
             }
         }
         // Update score display on index.html
-        this.updateAffichageScore (score) {
-            document.querySelector('#score').innerHTML(score);
+        this.updateAffichageScore = function (score) {
+            document.querySelector('#score').innerHTML(score)
         }
         this.increaseScore = function(){}
     }
 
     function Multiple(price, level){
-        this.price = price
-        this.level = level
+        this.price = price;
+        this.level = level;
         this.evolPrice = function(price){
             return price*2
         }
