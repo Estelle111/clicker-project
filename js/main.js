@@ -5,17 +5,15 @@ window.onload = () => {
     // Main Function 
     function gameFlow(){
         // Create event listener on click button
-        clickBtn = document.querySelector('#hClick')
-        clickBtn.addEventListener('click', () => {
+        game.clickBtn.addEventListener('click', () => {
             console.log(game.score)
             game.increaseScore();
             game.updateAffichageScore(game.score);
             game.checkPrice();
         })
         // Create event listener on multiply button
-        multBtn = document.querySelector('#hMultiplier')
         multObject = game.multiplier
-        multBtn.addEventListener("click",() => {
+        game.multBtn.addEventListener("click",() => {
             if (game.isBuyable(game.score,multObject.price) == true) { 
                 game.score = game.payForUpgrade(game.score,multObject.price)
                 multObject.price = multObject.evolPrice(multObject.price)
@@ -28,6 +26,11 @@ window.onload = () => {
         })
     }
     function Game(score){
+        // Adds buttons properties
+        this.clickBtn = document.querySelector('#hClick')
+        this.multBtn = document.querySelector('#hMultiplier')
+        this.autoBtn = document.querySelector('#hAutoclick')
+        this.bonusBtn = document.querySelector('#hBonus')
         this.score = score
         this.multiplier = new Multiple(50,1,1)
         // Check if possible buy (score > 0)
@@ -86,7 +89,7 @@ window.onload = () => {
         }
         // Update multiple display on index.html
         this.updateAffichageMultiple = function () {
-            document.querySelector('#hMultiplier').innerHTML = 'X' + this.increase.toFixed(2) + ' | ' + this.price.toFixed(2);
+            game.multBtn.innerHTML = 'X' + this.increase.toFixed(2) + ' | ' + this.price.toFixed(2);
         }
     }
 }

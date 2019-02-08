@@ -54,6 +54,10 @@ The list is divided into sections, as follow :
 | Name | Description |
 | ---- | ----------- |
 | score | The actual score of the user (used to buy upgrades) |
+| clickBtn | Selector of the main click button |
+| multBtn | Selector of the multiplier button |
+| autoBtn | Selector of the autoclick button |
+| bonusBtn | Selector of the bonus button |
 
 #### Children
 
