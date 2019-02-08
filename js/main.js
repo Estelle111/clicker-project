@@ -4,6 +4,9 @@ window.onload = () => {
     gameFlow();
     // Main Function 
     function gameFlow(){
+        game.updateAffichageScore(game.score);
+        game.multiplier.updateAffichageMultiple();
+        game.autoclick.updateAffichageAutoclick();
         // Increase score by bps every second
         setInterval(()=>{
             game.score+=game.autoclick.bps
@@ -161,7 +164,7 @@ window.onload = () => {
         }
         // Update autoclick display on index.html
         this.updateAffichageAutoclick = function () {
-            game.autoBtn.innerHTML = this.bps.toFixed(2)+' bananas per second' + ' | ' + this.price.toFixed(2);
+            game.autoBtn.innerHTML = autoclick.bps.toFixed(2)+' bananas per second' + ' | ' + autoclick.price.toFixed(2);
         }
     }
 }
