@@ -14,4 +14,8 @@ body {
   margin: auto;
 }
 
+#hBonus {
+  position: fixed;
+}
+
 /*# sourceMappingURL=style.css.map */

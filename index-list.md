@@ -44,6 +44,7 @@ The list is divided into sections, as follow :
 | ---- | ----- | ------ | -------- | ----------- |
 | game | Game | window | multiplier | Main object, the game itself |
 | multiplier | Multiple | game | none | Contains the data allowing us to increase the score multiplier per click |
+| bonus | Bonus | game | none | Contains the data to setup the random bonus event |
 
 ***
 
@@ -94,3 +95,24 @@ The list is divided into sections, as follow :
 | evolPrice | price | newPrice | Function used to increase the price of the update |
 | evolLevel | level | newLevel | Function used to increase the level of the multiplier |
 | evolIncrease | increase | newIncrease | Function used to increase the score of the multiplier |
+
+### Bonus
+
+#### Properties
+
+| Name | Description |
+| ---- | ----------- |
+
+#### Children
+
+| Name | Arguments | Description |
+| ---- | --------- | ----------- |
+
+
+#### Methods
+
+| Name | Arguments | Return | Description |
+| ---- | --------- | ------ | ----------- |
+| increaseScore | increase | newIncrease | Function used to increase the score of the multiplier |
+| showBonus | none | none | Display the bonus button |
+| hideBonus | none | none | Hide the bonus button |

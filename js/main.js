@@ -28,6 +28,7 @@ window.onload = () => {
     function Game(score){
         this.score = score
         this.multiplier = new Multiple(50,1,1)
+        this.bonus = new Bonus()
         // Check if possible buy (score > 0)
         // return false if too expensive, true else
         this.isBuyable = function(score,price){
@@ -71,6 +72,18 @@ window.onload = () => {
         // Update multiple display on index.html
         this.updateAffichageMultiple = function () {
             document.querySelector('#hMultiplier').innerHTML = 'X' + this.increase.toFixed(2) + ' | ' + this.price.toFixed(2);
+        }
+    }
+
+    function Bonus() {
+        this.increaseScore = function (increase) {
+            return increase*5
+        }
+        this.showBonus = function () {
+            game.bonusBtn.style.display = "inline-block"
+        }
+        this.hideBonus = function () {
+            game.bonusBtn.style.display = "none"
         }
     }
 }
