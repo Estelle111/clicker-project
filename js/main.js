@@ -4,6 +4,7 @@ window.onload = () => {
     gameFlow();
     // Main Function 
     function gameFlow(){
+        game.checkPrice();
         game.updateAffichageScore(game.score);
         game.multiplier.updateAffichageMultiple();
         game.autoclick.updateAffichageAutoclick();
@@ -101,8 +102,8 @@ window.onload = () => {
         }
         // Cycle through each upgrade object and launch the btn_enabler_disabler method
         this.checkPrice = function(){
-            game.buttonEnableDisable(game.score,multObject.price,game.multBtn)
-            // game.uttonEnableDisable(game.score,autoObject.price,game.autoBtn) // PLACEHOLDER ARGUMENTS - CORRECTION NEEDED AFTER CREATING THE AUTOCLICKER
+            game.buttonEnableDisable(game.score,game.multiplier.price,game.multBtn)
+            game.buttonEnableDisable(game.score,game.autoclick.price,game.autoBtn) 
         }
     }
 
