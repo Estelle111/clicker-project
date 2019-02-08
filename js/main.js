@@ -95,7 +95,7 @@ window.onload = () => {
     }
 
     function Bonus() {
-        this.increaseScore = function (increase) {
+        this.evolBonusIncrease = function (increase) {
             return increase*5
         }
         this.showBonus = function () {

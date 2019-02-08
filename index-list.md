@@ -119,6 +119,6 @@ The list is divided into sections, as follow :
 
 | Name | Arguments | Return | Description |
 | ---- | --------- | ------ | ----------- |
-| increaseScore | increase | newIncrease | Function used to increase the score of the multiplier |
+| evolBonusIncrease | increase | newIncrease | Function used to increase the score of the multiplier |
 | showBonus | none | none | Display the bonus button |
 | hideBonus | none | none | Hide the bonus button |
