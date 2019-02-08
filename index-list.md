@@ -107,6 +107,28 @@ The list is divided into sections, as follow :
 
 ### Autoclick
 
+#### Properties
+
+| Name | Description |
+| ---- | ----------- |
+| price | update price autoclick |
+| level | number of time autoclick |
+| bps | when user buys the upgrade |
+
+#### Children
+
+| Name | Arguments | Description |
+| ---- | --------- | ----------- |
+
+
+#### Methods
+
+| Name | Arguments | Return | Description |
+| ---- | --------- | ------ | ----------- |
+| evolPrice | price | newPrice | Function used to increase the price of the update |
+| evolLevel | level | newLevel | Function used to increase the level of the autoclick |
+| evolBps | bps | newBps| Function used increase bps when user buys the upgrade |
+
 ### Bonus
 
 #### Properties
