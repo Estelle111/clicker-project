@@ -16,7 +16,7 @@ body {
 
 #hBonus {
   position: fixed;
-  display: none;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */

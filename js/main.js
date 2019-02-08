@@ -53,10 +53,11 @@ window.onload = () => {
         // setInterval(bonusObject.showBonus(), (Math.floor((Math.random() * 10000) + 5000)))
         game.bonusBtn.addEventListener("click",() => {
             bonusObject.hideBonus()
+            multObject.updateAffichageMultiple()
             console.log(multObject.increase)
             bonusObject.evolBonusIncrease()
         })
-        bonusObject.showBonusRandom()
+        // bonusObject.showBonusRandom()
     }
     function Game(score){
         // Adds buttons properties
