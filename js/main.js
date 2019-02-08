@@ -104,9 +104,6 @@ window.onload = () => {
     function Bonus() {
         this.randomTime = Math.floor((Math.random() * 10000) + 1)
         // Function used to increase the score of the multiplier then decrease after X second
-        //
-        // Attention bug > remove multiplier.price from score on clic ...
-        //
         this.evolBonusIncrease = function () {
             multObject.increase *= 5
             console.log(multObject.increase)
