@@ -10,6 +10,7 @@ window.onload = () => {
             console.log(game.score)
             game.increaseScore();
             game.updateAffichageScore(game.score);
+            game.checkPrice();
         })
         // Create event listener on multiply button
         multBtn = document.querySelector('#hMultiplier')
@@ -21,6 +22,7 @@ window.onload = () => {
                 multObject.level = multObject.evolLevel(multObject.level)
                 multObject.increase = multObject.evolIncrease(multObject.increase)
                 multObject.updateAffichageMultiple();
+                game.checkPrice();
                 game.updateAffichageScore(game.score);
             }
         })
@@ -49,6 +51,20 @@ window.onload = () => {
         // Decreases user score to pay for an upgrade
         this.payForUpgrade = function(score,price){      
             return (score - price)      
+        }
+        // Deactivate buttons if the user has not enough points to buy the upgrade
+        this.buttonEnableDisable = function(score, price,btnType){
+            btn = document.querySelector(`h${btnType}`)
+            if (isBuyable(score,price)){
+                btn.disabled=false;
+            }else{
+                btn.disabled=true;
+            }
+        }
+        // Cycle through each upgrade object and launch the btn_enabler_disabler method
+        this.checkPrice = function(){
+            buttonEnableDisable(game.score,multObject.price,Multiplier)
+            buttonEnableDisable(game.score,autoObject.price,Autoclick) // PLACEHOLDER ARGUMENT - CORRECTION NEEDED AFTER CREATING THE AUTOCLICKER
         }
     }
 

@@ -68,6 +68,8 @@ The list is divided into sections, as follow :
 | isBuyable | score , price | boolean | Checks if score > price, returns true if so |
 | updateAffichageScore | score | none | changes the inner html to display the user score |
 | increaseScore | none | none | Increases the value of the score when the user clicks |
+| buttonEnableDisable | score, price, btnType | none | Uses the isBuyable method do determine if the user can buy an upgrade a enable/disable the button associated to the upgrade according to the result |
+| checkPrice | none | none | Cycle through each upgrade btn and calls buttonEnableDisable |
 
 ***
 
