@@ -44,7 +44,9 @@ window.onload = () => {
                 autoObject.updateAffichageAutoclick();
                 game.checkPrice();
                 game.updateAffichageScore(game.score);
+                game.updateAffichageBps(autoObject.bps);
             }
+            console.log(autoObject.bps);
         })
 
         // Create event listener on bonus button
@@ -89,7 +91,10 @@ window.onload = () => {
         this.updateAffichageScore = function (score) {
             document.querySelector('#hScore').innerHTML = score.toFixed(2)
         }
-
+        // Update bps display on index.html
+        this.updateAffichageBps = function (bps) {
+            document.querySelector('#hPerSecond').innerHTML = `${bps} banana/second`
+        }
         // Increase score by multiplier
         this.increaseScore = function(){
             this.score += this.multiplier.increase
