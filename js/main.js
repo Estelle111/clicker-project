@@ -4,6 +4,11 @@ window.onload = () => {
     gameFlow();
     // Main Function 
     function gameFlow(){
+        // Increase score by bps every second
+        setInterval(()=>{
+            game.score+=game.autoclick.bps
+            game.updateAffichageScore(game.score);
+        }, 1000);
         // Create event listener on click button
         game.clickBtn.addEventListener('click', () => {
             console.log(game.score)
@@ -24,6 +29,20 @@ window.onload = () => {
                 game.updateAffichageScore(game.score);
             }
         })
+        // Create event listener on autoclick button
+        autoObject = game.autoclick
+        game.autoBtn.addEventListener("click",() => {
+            if (game.isBuyable(game.score,autoObject.price) == true) { 
+                game.score = game.payForUpgrade(game.score,autoObject.price)
+                autoObject.price = autoObject.evolPrice(autoObject.price)
+                autoObject.level = autoObject.evolLevel(autoObject.level)
+                autoObject.bps = autoObject.evolBps(autoObject.bps)
+                autoObject.updateAffichageAutoclick();
+                game.checkPrice();
+                game.updateAffichageScore(game.score);
+            }
+        })
+
         // Create event listener on bonus button
         bonusObject = game.bonus
         // setInterval(bonusObject.showBonus(), 2000)
@@ -44,6 +63,7 @@ window.onload = () => {
         this.bonusBtn = document.querySelector('#hBonus')
         this.score = score
         this.multiplier = new Multiple(50,1,1)
+        this.autoclick = new Autoclick(200,1,0)
         this.bonus = new Bonus()
         // Check if possible buy (score > 0)
         // return false if too expensive, true else
@@ -120,6 +140,28 @@ window.onload = () => {
         // Hide the bonus button
         this.hideBonus = function () {
             game.bonusBtn.style.display = "none"
+        }
+    }
+
+    function Autoclick(price, level, bps) {
+        this.price = price;
+        this.level = level;
+        this.bps = bps;
+        // update price autoclick
+        this.evolPrice = function(price){
+            return price*1.15;
+        }
+        // update level autoclick (number of time autoclick)
+        this.evolLevel = function(level){
+            return level+1;
+        }
+        // update bps (when user buys the upgrade)
+        this.evolBps= function(bps){
+            return bps+1;
+        }
+        // Update autoclick display on index.html
+        this.updateAffichageAutoclick = function () {
+            game.autoBtn.innerHTML = this.bps.toFixed(2)+' bananas per second' + ' | ' + this.price.toFixed(2);
         }
     }
 }
