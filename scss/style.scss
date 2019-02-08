@@ -5,28 +5,34 @@
 
 body {
     background-color: #fefefe;
-    #page{
-        background-color: #DDD;
-        width: 50%;
-        text-align: center;    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin:auto;
-        #main{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: middle;
-        }
-        #supplement{
-            display:flex;
-            align-items: center;
-            justify-content: space-around;
-            #hBonus {
-                display: inline-block;
-            }
-        }
+}
+    
+#page{
+    margin: auto;
+    max-width: 1200px;
+    min-width: 300px;
+    width: 95%;
+    background-color: #DDD;
+    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+        
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: middle;
+}
+        
+#supplement{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    #hBonus {
+        display: inline-block;
     }
 }
+    
