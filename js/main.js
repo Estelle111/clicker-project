@@ -24,6 +24,16 @@ window.onload = () => {
                 game.updateAffichageScore(game.score);
             }
         })
+        // Create event listener on bonus button
+        bonusObject = game.bonus
+        game.bonusBtn.addEventListener("click",() => {
+            bonusObject.hideBonus()
+            multObject.increase = bonusObject.evolBonusIncrease(multObject.increase)
+            console.log(multObject.increase)
+            multObject.increase = setTimeout(bonusObject.resetBonusIncrease(multObject.increase), 10000)
+            console.log(multObject.increase)
+            console.log(bonusObject)
+        })
     }
     function Game(score){
         // Adds buttons properties
@@ -95,8 +105,12 @@ window.onload = () => {
     }
 
     function Bonus() {
+        this.randomTime = Math.floor((Math.random() * 10000) + 1)
         this.evolBonusIncrease = function (increase) {
             return increase*5
+        }
+        this.resetBonusIncrease = function (increase) {
+            return increase/5
         }
         this.showBonus = function () {
             game.bonusBtn.style.display = "inline-block"
