@@ -4,6 +4,9 @@ window.onload = () => {
     gameFlow();
     // Main Function 
     function gameFlow(){
+        game.updateAffichageScore(game.score);
+        game.multiplier.updateAffichageMultiple();
+        game.autoclick.updateAffichageAutoclick();
         // Increase score by bps every second
         setInterval(()=>{
             game.score+=game.autoclick.bps
@@ -45,11 +48,15 @@ window.onload = () => {
 
         // Create event listener on bonus button
         bonusObject = game.bonus
+        // setInterval(bonusObject.showBonus(), 2000)
+        // setInterval(() => {game.bonusBtn.style.display = "inline-block";}, (Math.floor((Math.random() * 10000) + 5000)))
+        // setInterval(bonusObject.showBonus(), (Math.floor((Math.random() * 10000) + 5000)))
         game.bonusBtn.addEventListener("click",() => {
             bonusObject.hideBonus()
             console.log(multObject.increase)
             bonusObject.evolBonusIncrease()
         })
+        bonusObject.showBonusRandom()
     }
     function Game(score){
         // Adds buttons properties
@@ -122,7 +129,6 @@ window.onload = () => {
     }
 
     function Bonus() {
-        this.randomTime = Math.floor((Math.random() * 10000) + 1)
         // Function used to increase the score of the multiplier then decrease after X second
         this.evolBonusIncrease = function () {
             multObject.increase *= 5
@@ -130,8 +136,9 @@ window.onload = () => {
             setTimeout(() => {multObject.increase /= 5; console.log(multObject.increase);}, 5000)
         }
         // Display the bonus button
-        this.showBonus = function () {
+        this.showBonusRandom = function () {
             game.bonusBtn.style.display = "inline-block"
+            setTimeout(this.showBonusRandom, Math.floor((Math.random() * 10000) + 5000))
         }
         // Hide the bonus button
         this.hideBonus = function () {
@@ -157,7 +164,7 @@ window.onload = () => {
         }
         // Update autoclick display on index.html
         this.updateAffichageAutoclick = function () {
-            game.autoBtn.innerHTML = this.bps.toFixed(2)+' bananas per second' + ' | ' + this.price.toFixed(2);
+            game.autoBtn.innerHTML = game.autoclick.bps.toFixed(2)+' bananas per second' + ' | ' + game.autoclick.price.toFixed(2);
         }
     }
 }
