@@ -69,7 +69,7 @@ window.onload = () => {
         // Deactivate buttons if the user has not enough points to buy the upgrade
         this.buttonEnableDisable = function(score, price,btnType){
             btn = btnType
-            if (isBuyable(score,price)){
+            if (game.isBuyable(score,price)){
                 btn.disabled=false;
             }else{
                 btn.disabled=true;
@@ -77,8 +77,8 @@ window.onload = () => {
         }
         // Cycle through each upgrade object and launch the btn_enabler_disabler method
         this.checkPrice = function(){
-            buttonEnableDisable(game.score,multObject.price,game.multBtn)
-            buttonEnableDisable(game.score,autoObject.price,game.autoBtn) // PLACEHOLDER ARGUMENTS - CORRECTION NEEDED AFTER CREATING THE AUTOCLICKER
+            game.buttonEnableDisable(game.score,multObject.price,game.multBtn)
+            // game.uttonEnableDisable(game.score,autoObject.price,game.autoBtn) // PLACEHOLDER ARGUMENTS - CORRECTION NEEDED AFTER CREATING THE AUTOCLICKER
         }
     }
 
