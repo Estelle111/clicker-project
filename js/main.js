@@ -4,6 +4,7 @@ window.onload = () => {
     gameFlow();
     // Main Function 
     function gameFlow(){
+        game.checkPrice();
         game.updateAffichageScore(game.score);
         game.multiplier.updateAffichageMultiple();
         game.autoclick.updateAffichageAutoclick();
@@ -48,16 +49,22 @@ window.onload = () => {
 
         // Create event listener on bonus button
         bonusObject = game.bonus
-        // setInterval(bonusObject.showBonus(), 2000)
-        // setInterval(() => {game.bonusBtn.style.display = "inline-block";}, (Math.floor((Math.random() * 10000) + 5000)))
-        // setInterval(bonusObject.showBonus(), (Math.floor((Math.random() * 10000) + 5000)))
+        setTimeout(() => {
+            bonusObject.showBonusRandom()
+            },
+            bonusObject.randomTime
+        )
         game.bonusBtn.addEventListener("click",() => {
             bonusObject.hideBonus()
-            multObject.updateAffichageMultiple()
+            // multObject.updateAffichageMultiple()
             console.log(multObject.increase)
             bonusObject.evolBonusIncrease()
+            setTimeout(() => {
+                bonusObject.showBonusRandom()
+                },
+                bonusObject.randomTime
+            )
         })
-        // bonusObject.showBonusRandom()
     }
     function Game(score){
         // Adds buttons properties
@@ -102,8 +109,8 @@ window.onload = () => {
         }
         // Cycle through each upgrade object and launch the btn_enabler_disabler method
         this.checkPrice = function(){
-            game.buttonEnableDisable(game.score,multObject.price,game.multBtn)
-            // game.uttonEnableDisable(game.score,autoObject.price,game.autoBtn) // PLACEHOLDER ARGUMENTS - CORRECTION NEEDED AFTER CREATING THE AUTOCLICKER
+            game.buttonEnableDisable(game.score,game.multiplier.price,game.multBtn)
+            game.buttonEnableDisable(game.score,game.autoclick.price,game.autoBtn) 
         }
     }
 
@@ -130,16 +137,24 @@ window.onload = () => {
     }
 
     function Bonus() {
+        this.randomTime = 5000 + Math.floor((Math.random() * 10000) + 1)
         // Function used to increase the score of the multiplier then decrease after X second
         this.evolBonusIncrease = function () {
             multObject.increase *= 5
+            game.multiplier.updateAffichageMultiple()
             console.log(multObject.increase)
-            setTimeout(() => {multObject.increase /= 5; console.log(multObject.increase);}, 5000)
+            setTimeout(() => {
+                multObject.increase /= 5
+                console.log(multObject.increase)
+                game.multiplier.updateAffichageMultiple()
+                ;},
+                5000
+            )
         }
         // Display the bonus button
         this.showBonusRandom = function () {
             game.bonusBtn.style.display = "inline-block"
-            setTimeout(this.showBonusRandom, Math.floor((Math.random() * 10000) + 5000))
+            this.randomTime = 5000 + Math.floor((Math.random() * 10000) + 1)
         }
         // Hide the bonus button
         this.hideBonus = function () {

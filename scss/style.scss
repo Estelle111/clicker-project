@@ -1,18 +1,32 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
     background-color: #fefefe;
-}
-#page {
-    background-color: #DDD;
-    width: 50%;
-    text-align: center;
-    display: block;
-    margin: auto;
-}
-#hBonus {
-    position: fixed;
-    display: inline-block;
+    #page{
+        background-color: #DDD;
+        width: 50%;
+        text-align: center;    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin:auto;
+        #main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: middle;
+        }
+        #supplement{
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            #hBonus {
+                display: inline-block;
+            }
+        }
+    }
 }

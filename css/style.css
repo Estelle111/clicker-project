@@ -1,21 +1,33 @@
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
   background-color: #fefefe;
 }
-
-#page {
+body #page {
   background-color: #DDD;
   width: 50%;
   text-align: center;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   margin: auto;
 }
-
-#hBonus {
-  position: fixed;
+body #page #main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: middle;
+}
+body #page #supplement {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body #page #supplement #hBonus {
   display: inline-block;
 }
 
