@@ -44,6 +44,7 @@ The list is divided into sections, as follow :
 | ---- | ----- | ------ | -------- | ----------- |
 | game | Game | window | multiplier | Main object, the game itself |
 | multiplier | Multiple | game | none | Contains the data allowing us to increase the score multiplier per click |
+| autoclick | Autoclick | game | none | Contains the data allowing us to click for us when buying it |
 
 ***
 
@@ -67,7 +68,7 @@ The list is divided into sections, as follow :
 | ---- | --------- | ------ | ----------- |
 | isBuyable | score , price | boolean | Checks if score > price, returns true if so |
 | updateAffichageScore | score | none | changes the inner html to display the user score |
-| increaseScore | none | none | Increases the value of the score when the user clicks |
+| increaseScore | increase | increase | Increases the value of the score when the user clicks |
 
 ***
 
@@ -94,3 +95,8 @@ The list is divided into sections, as follow :
 | evolPrice | price | newPrice | Function used to increase the price of the update |
 | evolLevel | level | newLevel | Function used to increase the level of the multiplier |
 | evolIncrease | increase | newIncrease | Function used to increase the score of the multiplier |
+
+***
+
+### Autoclick
+

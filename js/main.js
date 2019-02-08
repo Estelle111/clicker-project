@@ -28,6 +28,7 @@ window.onload = () => {
     function Game(score){
         this.score = score
         this.multiplier = new Multiple(50,1,1)
+        this.autoclick = new Autoclick(200,1,0)
         // Check if possible buy (score > 0)
         // return false if too expensive, true else
         this.isBuyable = function(score,price){
@@ -71,6 +72,17 @@ window.onload = () => {
         // Update multiple display on index.html
         this.updateAffichageMultiple = function () {
             document.querySelector('#hMultiplier').innerHTML = 'X' + this.increase.toFixed(2) + ' | ' + this.price.toFixed(2);
+        }
+    }
+
+    function Autoclick(price, level, bps){
+        this.price = price;
+        this.level = level;
+        this.bps = bps;
+        this.launchAuto = function(bps){
+            if(game.isBuyable(game.score, autoclick.price)){
+                return bps+1
+            }
         }
     }
 }
