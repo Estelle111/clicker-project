@@ -28,11 +28,8 @@ window.onload = () => {
         bonusObject = game.bonus
         game.bonusBtn.addEventListener("click",() => {
             bonusObject.hideBonus()
-            multObject.increase = bonusObject.evolBonusIncrease(multObject.increase)
             console.log(multObject.increase)
-            multObject.increase = setTimeout(bonusObject.resetBonusIncrease(multObject.increase), 10000)
-            console.log(multObject.increase)
-            console.log(bonusObject)
+            bonusObject.evolBonusIncrease()
         })
     }
     function Game(score){
@@ -106,15 +103,20 @@ window.onload = () => {
 
     function Bonus() {
         this.randomTime = Math.floor((Math.random() * 10000) + 1)
-        this.evolBonusIncrease = function (increase) {
-            return increase*5
+        // Function used to increase the score of the multiplier then decrease after X second
+        //
+        // Attention bug > remove multiplier.price from score on clic ...
+        //
+        this.evolBonusIncrease = function () {
+            multObject.increase *= 5
+            console.log(multObject.increase)
+            setTimeout(() => {multObject.increase /= 5; console.log(multObject.increase);}, 5000)
         }
-        this.resetBonusIncrease = function (increase) {
-            return increase/5
-        }
+        // Display the bonus button
         this.showBonus = function () {
             game.bonusBtn.style.display = "inline-block"
         }
+        // Hide the bonus button
         this.hideBonus = function () {
             game.bonusBtn.style.display = "none"
         }
