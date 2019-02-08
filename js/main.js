@@ -89,11 +89,11 @@ window.onload = () => {
         }
         // Update score display on index.html
         this.updateAffichageScore = function (score) {
-            document.querySelector('#hScore').innerHTML = score.toFixed(2)
+            document.querySelector('#hScore').innerHTML = `${score.toFixed(2)} banana(s)`
         }
         // Update bps display on index.html
         this.updateAffichageBps = function (bps) {
-            document.querySelector('#hPerSecond').innerHTML = `${bps} banana/second`
+            document.querySelector('#hPerSecond').innerHTML = `${bps} banana(s)/second`
         }
         // Increase score by multiplier
         this.increaseScore = function(){
