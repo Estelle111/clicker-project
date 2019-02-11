@@ -10,6 +10,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {
@@ -339,5 +343,19 @@ body {
   border: solid 2px #692e22;
   border-color: transparent transparent #692e22;
 }
+
+/* Police d'écriture */
+@font-face {
+  font-family: "waltographUI";
+  src: url("../font/waltographUI.ttf") format("truetype");
+}
+h1 {
+  font-family: "waltographUI", arial, sans-serif;
+  color: yellow;
+  font-size: 77px;
+  text-shadow: 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60;
+}
+
+/* police d'écriture */
 
 /*# sourceMappingURL=style.css.map */
