@@ -10,6 +10,7 @@ html {
 body {
   background: #2c2836;
   background: radial-gradient(circle, #2c2836 5%, #2e2b3c 25%, #33394e 75%, #2e5d5f 95%);
+  overflow: hidden;
 }
 
 #page {
@@ -41,6 +42,77 @@ body {
 }
 #supplement #hBonus {
   display: inline-block;
+}
+
+.leafLeft {
+  position: absolute;
+  top: 0;
+  left: -4vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.leafTop {
+  display: flex;
+  top: -4vh;
+  position: absolute;
+  left: 20vh;
+}
+
+.shapeLeaf {
+  border-radius: 5px 300px 3px 300px;
+  width: 150px;
+  height: 150px;
+}
+.shapeLeaf .line {
+  position: relative;
+  width: 174px;
+  height: 62px;
+  z-index: 102;
+  top: 31%;
+  left: -22%;
+  border-radius: 100%;
+  transform: rotate(222deg);
+}
+
+.leafGreenDark {
+  background: #559587;
+}
+.leafGreenDark .lineLeafGreenDark {
+  border: solid 2px #3b685e;
+  border-color: transparent transparent #3b685e;
+}
+
+.leafGreenMiddle {
+  background: #75958e;
+}
+.leafGreenMiddle .lineLeafGreenMiddle {
+  border: solid 2px #b0c2be;
+  border-color: transparent transparent #b0c2be;
+}
+
+.leafGreenLight {
+  background: #80b7ab;
+}
+.leafGreenLight .lineLeafLight {
+  border: solid 2px #a6ccc4;
+  border-color: transparent transparent #a6ccc4;
+}
+
+.leafWhite {
+  background: #eae4cc;
+}
+.leafWhite .lineLeafWhite {
+  border: solid 2px #bbb6a3;
+  border-color: transparent transparent #bbb6a3;
+}
+
+.leafRed {
+  background: #d95f47;
+}
+.leafRed .lineLeafRed {
+  border: solid 2px #692e22;
+  border-color: transparent transparent #692e22;
 }
 
 /*# sourceMappingURL=style.css.map */

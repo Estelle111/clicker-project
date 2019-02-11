@@ -10,6 +10,7 @@ html {
 body {
     background: rgb(44,40,54);
     background: radial-gradient(circle, rgba(44,40,54,1) 5%, rgba(46,43,60,1) 25%, rgba(51,57,78,1) 75%, rgba(46,93,95,1) 95%);
+    overflow: hidden;
 }
     
 #page{
@@ -42,4 +43,74 @@ body {
         display: inline-block;
     }
 }
-    
+
+// leaf background
+.leafLeft {
+    position: absolute;
+    top: 0;
+    left: -4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.leafTop {
+    display: flex;
+    top: -4vh;
+    position: absolute;
+    left: 20vh;
+}
+
+.shapeLeaf {
+    border-radius: 5px 300px 3px 300px;
+    width: 150px;
+    height: 150px;
+    .line {
+        position: relative;
+        width: 174px;
+        height: 62px;
+        z-index: 102;
+        top: 31%;
+        left: -22%;
+        border-radius: 100%;
+        transform: rotate(222deg);
+    }
+}  
+.leafGreenDark {
+    background: #559587;
+    .lineLeafGreenDark {
+        border: solid 2px #3b685e;
+        border-color: transparent transparent #3b685e;
+    }
+}
+
+.leafGreenMiddle {
+    background: #75958e;
+    .lineLeafGreenMiddle {
+        border: solid 2px #b0c2be;
+        border-color: transparent transparent #b0c2be;
+    }
+}
+
+.leafGreenLight {
+    background: #80b7ab;
+    .lineLeafLight {
+        border: solid 2px #a6ccc4;
+        border-color: transparent transparent #a6ccc4;
+    }
+}
+
+.leafWhite {
+    background: #eae4cc;
+    .lineLeafWhite {
+        border: solid 2px #bbb6a3;
+        border-color: transparent transparent #bbb6a3;
+    }
+}
+
+.leafRed {
+    background: #d95f47;
+    .lineLeafRed {
+        border: solid 2px #692e22;
+        border-color: transparent transparent #692e22;
+    }
+}
