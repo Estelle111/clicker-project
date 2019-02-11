@@ -1,0 +1,114 @@
+@mixin plank(){
+    background: linear-gradient(0deg,rgba(238,196,135,.5) 0%,rgba(243,207,154,.5) 3%,rgba(248,216,162,.5) 6%,rgba(243,207,154,.5) 6%,rgba(243,207,154,.5) 9%,rgba(241,202,136,.5) 12%,rgba(243,207,154,.5) 15%,rgba(244,208,158,.5) 17%,rgba(243,207,154,.5) 19%,rgba(243,207,154,.5) 21%,rgba(250,221,176,.5) 23%,rgba(250,221,176,.5) 25%,rgba(243,207,154,.5) 27%,rgba(238,200,138,.5) 29%,rgba(243,207,154,.5) 29%,rgba(243,207,154,.5) 32%,rgba(243,207,154,.5) 34%,rgba(243,207,154,.5) 37%,rgba(250,221,176,.5) 40%,rgba(250,221,176,.5) 43%,rgba(243,207,154,.5) 43%,rgba(243,207,154,.5) 44%,rgba(243,207,154,.5) 47%,rgba(238,200,138,.5) 49%,rgba(243,207,154,.5) 52%,rgba(250,221,176,.5) 54%,rgba(244,208,158,.5) 56%,rgba(243,207,154,.5) 59%,rgba(244,208,158,.5) 61%,rgba(250,221,176,.5) 64%,rgba(243,207,154,.5) 64%,rgba(244,208,158,.5) 66%,rgba(243,207,154,.5) 69%,rgba(248,216,162,.5) 71%,rgba(243,207,154,.5) 74%,rgba(243,207,154,.5) 76%,rgba(243,207,154,.5) 77%,rgba(243,207,154,.5) 80%,rgba(250,221,176,.5) 81%,rgba(243,207,154,.5) 83%,rgba(250,221,176,.5) 83%,rgba(250,221,176,.5) 85%,rgba(243,207,154,.5) 87%,rgba(250,221,176,.5) 89%,rgba(250,221,176,.5) 91%,rgba(243,207,154,.5) 92%,rgba(248,216,162,.5) 96%,rgba(243,207,154,.5) 97%,rgba(243,207,154,.5) 97%,rgba(243,207,154,.5) 98%,rgba(243,207,154,.5) 100%),
+    linear-gradient(180deg, rgba(238,196,135,.3) 0%,rgba(243,207,154,.3) 3%,rgba(248,216,162,.3) 6%,rgba(243,207,154,.3) 6%,rgba(243,207,154,.3) 9%,rgba(241,202,136,.3) 12%,rgba(243,207,154,.3) 15%,rgba(244,208,158,.3) 17%,rgba(243,207,154,.3) 19%,rgba(243,207,154,.3) 21%,rgba(250,221,176,.3) 23%,rgba(250,221,176,.3) 25%,rgba(243,207,154,.3) 27%,rgba(238,200,138,.3) 29%,rgba(243,207,154,.3) 29%,rgba(243,207,154,.3) 32%,rgba(243,207,154,.3) 34%,rgba(243,207,154,.3) 37%,rgba(250,221,176,.3) 40%,rgba(250,221,176,.3) 43%,rgba(243,207,154,.3) 43%,rgba(243,207,154,.3) 44%,rgba(243,207,154,.3) 47%,rgba(238,200,138,.3) 49%,rgba(243,207,154,.3) 52%,rgba(250,221,176,.3) 54%,rgba(244,208,158,.3) 56%,rgba(243,207,154,.3) 59%,rgba(244,208,158,.3) 61%,rgba(250,221,176,.3) 64%,rgba(243,207,154,.3) 64%,rgba(244,208,158,.3) 66%,rgba(243,207,154,.3) 69%,rgba(248,216,162,.3) 71%,rgba(243,207,154,.3) 74%,rgba(243,207,154,.3) 76%,rgba(243,207,154,.3) 77%,rgba(243,207,154,.3) 80%,rgba(250,221,176,.3) 81%,rgba(243,207,154,.3) 83%,rgba(250,221,176,.3) 83%,rgba(250,221,176,.3) 85%,rgba(243,207,154,.3) 87%,rgba(250,221,176,.3) 89%,rgba(250,221,176,.3) 91%,rgba(243,207,154,.3) 92%,rgba(248,216,162,.3) 96%,rgba(243,207,154,.3) 97%,rgba(243,207,154,.3) 97%,rgba(243,207,154,.3) 98%,rgba(243,207,154,.3) 100%),
+    linear-gradient(0deg, rgba(238,196,135,.3) 0%,rgba(243,207,154,.3) 3%,rgba(238,200,138,.3) 49%,rgba(243,207,154,.3) 52%,rgba(250,221,176,.3) 54%,rgba(244,208,158,.3) 56%,rgba(243,207,154,.2) 59%,rgba(244,208,158,.3) 61%,rgba(250,221,176,.3) 64%,rgba(243,207,154,.3) 64%,rgba(244,208,158,.3) 66%,rgba(243,207,154,.3) 69%,rgba(248,216,162,.3) 71%,rgba(243,207,154,.3) 74%,rgba(243,207,154,.3) 76%,rgba(243,207,154,.3) 77%,rgba(243,207,154,.3) 80%,rgba(250,221,176,.3) 81%,rgba(243,207,154,.3) 83%,rgba(250,221,176,.3) 83%,rgba(250,221,176,.3) 85%,rgba(243,207,154,.3) 87%,rgba(250,221,176,.3) 89%,rgba(250,221,176,.3) 91%,rgba(243,207,154,.3) 92%,rgba(248,216,162,.3) 96%,rgba(243,207,154,.3) 97%,rgba(243,207,154,.3) 97%,rgba(243,207,154,.3) 98%,rgba(243,207,154,.3) 100%)
+    ;
+    background-size:10% 70%, 80% 80%, 100% 10%;
+    background-position:50% 50%, 70% 70%, 30% 30%;
+}
+
+.plank{
+    width : 100%;
+    z-index : -5;
+    background-color:rgba(33, 22, 0, 1);
+    border : 5px groove rgb(110, 86, 17);
+    overflow:hidden;
+    .texture1{
+        width : 110%;
+        height : 15%;
+        transform : rotate(-0.8deg) translate(-5% ,-5%);
+        background-color:rgba(33, 22, 0, 1);
+        @include plank();
+        z-index: 1;
+        border-bottom : 2px ridge rgb(80, 50, 6);
+        filter : brightness(0.5) hue-rotate(-15deg) saturate(1.6);
+    }
+    .texture2{
+        width : 110%;
+        height : 15%;
+        transform : rotate(0.5deg) translate(-5%, -5%);
+        @include plank();
+        background-color:rgba(33, 22, 0, 1);
+        z-index: 2;
+        filter : brightness(0.3) hue-rotate(-12deg) saturate(1.4)
+
+    }
+    .texture3{
+        width : 110%;
+        height : 15%;
+        transform : rotate(1.6deg) translate(-5%, -7%);
+        @include plank();
+        background-color:rgba(33, 22, 0, 1);
+        z-index: 1;
+        filter : brightness(0.4) hue-rotate(-8deg) saturate(1.5)
+
+    }
+    .texture4{
+        width : 110%;
+        height : 14%;
+        transform : rotate(0.4deg) translate(-5%, -5%);
+        @include plank();
+        background-color:rgba(33, 22, 0, 1);
+        z-index: 3;
+        filter : brightness(0.3) hue-rotate(-9deg) saturate(1.5)
+
+    }
+    .texture5{
+        width : 110%;
+        height : 20%;
+        transform : rotate(-1deg) translate(-5%, -5%);
+        @include plank();
+        background-color:rgba(33, 22, 0, 1);
+        z-index: 2;
+        filter : brightness(0.5) hue-rotate(-11deg) saturate(1.5)
+
+    }
+    .texture6{
+        width : 110%;
+        height : 23%;
+        transform : rotate(1deg) translate(-5%, -5%);
+        @include plank();
+        background-color:rgba(33, 22, 0, 1);
+        z-index: 1;
+        filter : brightness(0.3) hue-rotate(-15deg) saturate(1.5)
+    }
+}
+.nail{
+    height : 5px;
+    width: 5px;
+    background: rgb(109, 108, 108);
+    box-shadow: 1px 1px rgba(10,10,10,0.2);
+    border-radius: 50%;
+    z-index: 6;
+}
+.pos1{
+    position:absolute;
+    top : 5%;
+    left : 6%;
+}
+.pos2{
+    position: absolute;;
+    top : 10%;
+    right: 6%;
+}
+.pos3{
+    position: absolute;;
+    bottom : 10%;
+    right: 6%;
+}
+.pos4{
+    position: absolute;;
+    bottom : 10%;
+    left: 6%;
+}
+
+.big{
+    width : 100%;
+    height: 600px;
+}
+
+
+.small{
+    width:100%;
+    height: 300px;
+}
