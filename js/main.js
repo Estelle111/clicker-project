@@ -157,9 +157,9 @@ window.onload = () => {
         this.increase = increase;
         // Function called in the game flow - operates all multiplier changes in one go when the user clicks
         this.multFlow = function(){
-            this.price = this.price*1.15;
+            this.price = this.price*2;
             this.level = this.level+1;
-            this.increase = this.increase*1.1
+            this.increase = this.increase*2;
             this.updateAffichageMultiple()
         }
         // Update multiple display on index.html
@@ -174,9 +174,9 @@ window.onload = () => {
         this.bps = bps;
         // Function called in the game flow - operates all autoclick changes in one go when the user clicks
         this.autoFlow = function(){
-            this.price = this.price*1.15
-            this.level = this.level+1
-            this.bps = this.bps+1
+            this.price = this.price*2;
+            this.level = this.level+1;
+            this.bps = this.bps+1;
             this.updateAffichageAutoclick()
         }
         // Update autoclick display on index.html
