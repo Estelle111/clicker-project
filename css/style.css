@@ -264,24 +264,32 @@ body {
   position: absolute;
   display: flex;
   top: -6%;
-  left: 10%;
+  left: 2%;
   z-index: 9;
 }
 
 .leafTopTop {
   position: absolute;
   display: flex;
-  top: -8%;
-  left: 6%;
+  top: -11%;
+  left: -2%;
   z-index: 10;
 }
 
-.leafRight {
+.leafRightBot {
   position: absolute;
   display: flex;
   flex-direction: column;
   top: 0;
   left: 95%;
+}
+
+.leafRightTop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 5%;
+  left: 98%;
 }
 
 .leafBot {
