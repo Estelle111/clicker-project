@@ -36,3 +36,18 @@ body {
     }
 }
     
+/* Police d'écriture */
+@font-face {
+        font-family: "waltographUI";
+        src: url("../font/waltographUI.ttf") format("truetype");
+    }
+
+    h1 {
+        font-family: "waltographUI",arial,sans-serif;
+        color : yellow ; 
+        //text-shadow:0 4px 0 rgb(255, 96, 0), 0 -4px 0 rgb(255, 139, 0);
+        font-size : 77px ; 
+        text-shadow: 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60;
+
+    }
+/* police d'écriture */ 

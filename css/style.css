@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -35,5 +36,19 @@ body {
 #supplement #hBonus {
   display: inline-block;
 }
+
+/* Police d'écriture */
+@font-face {
+  font-family: "waltographUI";
+  src: url("../font/waltographUI.ttf") format("truetype");
+}
+h1 {
+  font-family: "waltographUI", arial, sans-serif;
+  color: yellow;
+  font-size: 77px;
+  text-shadow: 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60;
+}
+
+/* police d'écriture */
 
 /*# sourceMappingURL=style.css.map */
