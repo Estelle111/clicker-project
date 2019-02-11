@@ -190,4 +190,21 @@ body {
         border-color: transparent transparent #692e22;
     }
 }
+    
+/* Police d'écriture */
+@font-face {
+        font-family: "waltographUI";
+        src: url("../font/waltographUI.ttf") format("truetype");
+    }
 
+    h1 {
+        z-index : 25;
+        text-align: center;
+        font-family: "waltographUI",arial,sans-serif;
+        color : yellow ; 
+        //text-shadow:0 4px 0 rgb(255, 96, 0), 0 -4px 0 rgb(255, 139, 0);
+        font-size : 77px ; 
+        text-shadow: 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60;
+
+    }
+/* police d'écriture */ 
