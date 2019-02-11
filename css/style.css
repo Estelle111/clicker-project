@@ -3,13 +3,20 @@
   font-family: sans-serif;
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
-  background-color: #fefefe;
+  background: #2c2836;
+  background: radial-gradient(circle, #2c2836 5%, #2e2b3c 25%, #33394e 75%, #2e5d5f 95%);
 }
 
 #page {
+  position: relative;
+  top: 40vh;
   margin: auto;
-  max-width: 1200px;
+  max-width: 600px;
   min-width: 300px;
   width: 95%;
   background-color: #DDD;
