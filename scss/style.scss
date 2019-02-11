@@ -9,7 +9,7 @@ html {
 
 body {
     background: rgb(44,40,54);
-    background: radial-gradient(circle, rgba(44,40,54,1) 5%, rgba(46,43,60,1) 25%, rgba(51,57,78,1) 75%, rgba(46,93,95,1) 95%);
+    background: radial-gradient(circle, rgba(44,40,54,1) 5%, rgba(46,43,60,1) 25%, rgba(51,57,78,1) 70%, rgba(46,93,95,1) 86%);
     overflow: hidden;
 }
     
@@ -47,21 +47,45 @@ body {
 // leaf background
 .leafLeft {
     position: absolute;
-    top: 0;
-    left: -4vh;
     display: flex;
     flex-direction: column;
+    top: 0;
+    left: -2%;
 }
 
 .leafTop {
-    display: flex;
-    top: -4vh;
     position: absolute;
-    left: 20vh;
+    display: flex;
+    top: -6%;
+    left: 10%;
+}
+
+.leafRight {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;  
+    left: 92%;
+}
+
+.leafBot {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 90%;
+    left: 10%;
+}
+
+.rotateTopBot {
+    transform: rotate(45deg);
+}
+
+.rotateRight {
+    transform: rotate(270deg);
 }
 
 .shapeLeaf {
-    border-radius: 5px 300px 3px 300px;
+    border-radius: 5px 250px 3px 300px;
     width: 150px;
     height: 150px;
     .line {
@@ -114,3 +138,4 @@ body {
         border-color: transparent transparent #692e22;
     }
 }
+
