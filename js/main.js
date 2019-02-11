@@ -165,7 +165,7 @@ window.onload = () => {
         this.multFlow = function(){
             this.price = Math.round(this.price+(this.price/3)+(this.price%3));  //x=x+(x/3)+(x%3)
             this.level = this.level+1;
-            this.increase = this.increase*2;
+            this.increase = this.increase+1;
             this.updateAffichageMultiple()
         }
         // Update multiple display on index.html
