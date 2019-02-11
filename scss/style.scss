@@ -94,9 +94,6 @@ body {
 }
 
 // leaf background
-.leaf{
-    z-index : 10
-}
 .leafLeft {
     position: absolute;
     display: flex;
@@ -107,7 +104,7 @@ body {
 
 .leafTop {
     position: absolute;
-    display: flex;
+    display: flex;  
     top: -6%;
     left: 10%;
 }
