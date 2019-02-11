@@ -45,12 +45,21 @@ body {
 }
 
 // leaf background
-.leafLeft {
+.leafLeftTop {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 0;
+    top: 6%;
+    left: -6%;
+    z-index: 10;
+}
+.leafLeftBot {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0%;
     left: -2%;
+    z-index: 9;
 }
 
 .leafTop {
@@ -86,6 +95,7 @@ body {
 
 .shapeLeaf {
     border-radius: 5px 250px 3px 300px;
+    border: 1px solid rgb(44,40,54);
     width: 150px;
     height: 150px;
     .line {
