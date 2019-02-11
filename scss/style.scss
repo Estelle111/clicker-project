@@ -94,12 +94,22 @@ body {
 }
 
 // leaf background
-.leafLeft {
+.leafLeftBot {
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 0;
     left: -2%;
+    z-index: 9;
+}
+
+.leafLeftTop {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 6%;
+    left: -6%;
+    z-index: 10;
 }
 
 .leafTop {
