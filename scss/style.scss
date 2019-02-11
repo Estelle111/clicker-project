@@ -94,22 +94,38 @@ body {
 }
 
 // leaf background
-.leaf{
-    z-index : 10
-}
-.leafLeft {
+.leafLeftBot {
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 0;
     left: -2%;
+    z-index: 9;
 }
 
-.leafTop {
+.leafLeftTop {
     position: absolute;
     display: flex;
+    flex-direction: column;
+    top: 6%;
+    left: -6%;
+    z-index: 10;
+}
+
+.leafTopBot {
+    position: absolute;
+    display: flex;  
     top: -6%;
     left: 10%;
+    z-index: 9;
+}
+
+.leafTopTop {
+    position: absolute;
+    display: flex;  
+    top: -8%;
+    left: 6%;
+    z-index: 10;
 }
 
 .leafRight {
@@ -138,6 +154,7 @@ body {
 
 .shapeLeaf {
     border-radius: 5px 250px 3px 300px;
+    border: 1px solid rgb(44,40,54);
     width: 150px;
     height: 150px;
     .line {
