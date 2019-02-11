@@ -12,6 +12,4 @@ with CSS display:fixed, 4th button is underneath the Bonus button
 
 - No bugfix for the moment
 
-- No new bug for the moment ^^
-
-
+- Automatic save, when reloading page, doesn't refresh BpS counter.
