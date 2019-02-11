@@ -247,7 +247,7 @@ body {
   display: flex;
   flex-direction: column;
   top: 0;
-  left: -2%;
+  left: -3%;
   z-index: 9;
 }
 
@@ -282,6 +282,7 @@ body {
   flex-direction: column;
   top: 0;
   left: 95%;
+  z-index: 9;
 }
 
 .leafRightTop {
@@ -290,14 +291,25 @@ body {
   flex-direction: column;
   top: 5%;
   left: 98%;
+  z-index: 10;
 }
 
-.leafBot {
+.leafBotBot {
   position: absolute;
   display: flex;
   flex-direction: row;
   top: 90%;
-  left: 10%;
+  left: 2%;
+  z-index: 9;
+}
+
+.leafBotTop {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 94%;
+  left: -2%;
+  z-index: 10;
 }
 
 .rotateTopBot {
