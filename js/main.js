@@ -1,6 +1,24 @@
 window.onload = () => {
+    // Condition for memory load
+    // Check if memory exist (saveData !== null)
+    if (localStorage.getItem('saveData') !== null) {
+        // Creation and Init of game
+        game = new Game(0);
+        // Getting memory then setting it on live memory
+        var retrieveData = localStorage.getItem('saveData');
+        var getSave = JSON.parse(retrieveData);     
+        game.score = getSave.Score;
+        game.multiplier.price = getSave.MultiPrice;
+        game.multiplier.level = getSave.MultiLevel;
+        game.multiplier.increase = getSave.MultiIncrease;
+        game.autoclick.price = getSave.AutoPrice;
+        game.autoclick.level = getSave.AutoLevel;
+        game.autoclick.bps = getSave.AutoBpS;
+    } else {
+        // If nothing in memory, start game with score= 0
+        game = new Game(0);        
+    }
 
-    game = new Game(49);
     gameFlow();
 
     // Main Function 
@@ -10,11 +28,28 @@ window.onload = () => {
         game.updateAffichageScore(game.score);
         game.multiplier.updateAffichageMultiple();
         game.autoclick.updateAffichageAutoclick();
+        
+        // Local data automatic save / 1 minute interval
+
+        setInterval(()=>{
+            saveGameData();
+        }, 5000);
+        
         // Increase score by bps every second
         setInterval(()=>{
             game.score+=game.autoclick.bps
             game.updateAffichageScore(game.score);
         }, 1000);
+        
+        // Event Listener for click on reset button
+        game.resetBtn.addEventListener ("click",() => {
+            var x=confirm("Are you sure you want to do this? \nYou'll not be able to get your banana's back ... ever!!")
+            if (x==true)    {
+                localStorage.clear();
+                // Refresh the page locally (if set on true, reload from server)
+                document.location.reload(false);
+            }else{}
+        })
 
         // Create event listener on click button
         game.clickBtn.addEventListener('click', () => {
@@ -70,6 +105,7 @@ window.onload = () => {
         this.multBtn = document.querySelector('#hMultiplier')
         this.autoBtn = document.querySelector('#hAutoclick')
         this.bonusBtn = document.querySelector('#hBonus')
+        this.resetBtn = document.querySelector('#hReset')
         this.score = score
         this.multiplier = new Multiple(50,1,1)
         this.autoclick = new Autoclick(200,1,0)
@@ -173,5 +209,20 @@ window.onload = () => {
         this.hideBonus = function () {
             game.bonusBtn.style.display = "none"
         }
+    }
+
+    function saveGameData(){
+        var saveData = {
+            'Score':game.score,
+            'MultiPrice':game.multiplier.price,
+            'MultiLevel':game.multiplier.level,
+            'MultiIncrease':game.multiplier.increase,
+            'AutoPrice':game.autoclick.price,
+            'AutoLevel':game.autoclick.level,
+            'AutoBpS':game.autoclick.bps
+        }
+        // -> Storage
+        localStorage.setItem('saveData', JSON.stringify(saveData));
+        console.log(saveData.Score);
     }
 }
