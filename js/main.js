@@ -113,8 +113,8 @@ window.onload = () => {
         this.bonusBtn = document.querySelector('#hBonus')
         this.resetBtn = document.querySelector('#hReset')
         this.score = score
-        this.multiplier = new Multiple(50,1,1)
-        this.autoclick = new Autoclick(200,1,0)
+        this.multiplier = new Multiple(20,1,1)
+        this.autoclick = new Autoclick(10,1,0)
         this.bonus = new Bonus()
         // Check if possible buy (score > 0)
         // return false if too expensive, true else
@@ -163,7 +163,7 @@ window.onload = () => {
         this.increase = increase;
         // Function called in the game flow - operates all multiplier changes in one go when the user clicks
         this.multFlow = function(){
-            this.price = this.price*2;
+            this.price = Math.round(this.price+(this.price/3)+(this.price%3));  //x=x+(x/3)+(x%3)
             this.level = this.level+1;
             this.increase = this.increase*2;
             this.updateAffichageMultiple()
@@ -180,7 +180,7 @@ window.onload = () => {
         this.bps = bps;
         // Function called in the game flow - operates all autoclick changes in one go when the user clicks
         this.autoFlow = function(){
-            this.price = this.price*2;
+            this.price = Math.round(this.price+(this.price/3)+(this.price%2));  //x=x+(x/3)+(x%2)
             this.level = this.level+1;
             this.bps = this.bps+1;
             this.updateAffichageAutoclick()
