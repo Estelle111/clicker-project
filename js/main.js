@@ -14,6 +14,10 @@ window.onload = () => {
         game.autoclick.price = getSave.AutoPrice;
         game.autoclick.level = getSave.AutoLevel;
         game.autoclick.bps = getSave.AutoBpS;
+        game.multiplier.updateAffichageMultiple();
+        game.autoclick.updateAffichageAutoclick();
+        game.updateAffichageBps(game.autoclick.bps);
+
     } else {
         // If nothing in memory, start game with score= 0
         game = new Game(0);        
@@ -33,6 +37,8 @@ window.onload = () => {
 
         setInterval(()=>{
             saveGameData();
+            game.multiplier.updateAffichageMultiple();
+            game.autoclick.updateAffichageAutoclick();
         }, 5000);
         
         // Increase score by bps every second
