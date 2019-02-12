@@ -560,7 +560,7 @@ body {
 #page .centralColumn #hClick {
   position: fixed;
   cursor: pointer;
-  top: 50vh;
+  top: 55vh;
   width: 200px;
   height: 200px;
   margin-left: 124px;
@@ -568,7 +568,7 @@ body {
 #page .centralColumn #hBonus {
   position: fixed;
   cursor: pointer;
-  top: 46vh;
+  top: 51vh;
   width: 200px;
   height: 200px;
   margin-left: 163px;
