@@ -350,7 +350,7 @@ body {
 /* Police d'écriture */
 @font-face {
   font-family: "waltographUI";
-  src: url("../font/waltographUI.ttf") format("truetype");
+  src: url("../public/fonts/waltographUI.ttf") format("truetype");
 }
 h1 {
   z-index: 25;
@@ -363,14 +363,24 @@ h1 {
 
 @font-face {
   font-family: "Westmeath";
-  src: url("../font/Good Choice.ttf") format("truetype");
+  src: url("../public/fonts/AlphaFridgeMagnetsAllCaps.ttf") format("truetype");
 }
 #hScore {
   text-align: center;
   font-size: 30px;
   color: white;
   font-family: "Westmeath", arial, sans-serif;
-  font-family: "Acme", sans-serif;
+}
+
+@font-face {
+  font-family: "Westmeath0";
+  src: url("../public/fonts/AlphaFridgeMagnetsAllCaps.ttf") format("truetype");
+}
+#hPerSecond {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-family: "Westmeath0", arial, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
