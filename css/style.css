@@ -567,7 +567,7 @@ body {
   top: 50vh;
   width: 200px;
   height: 200px;
-  left: 50%;
+  left: 800px;
   transform: translateX(-50%);
 }
 #page .centralColumn #hBonus {
