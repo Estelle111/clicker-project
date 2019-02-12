@@ -58,11 +58,11 @@ body {
                 vertical-align: middle;
                 color: yellow;
             }
-            #bananaGrappe{
-                cursor: pointer;
+            .bananaGrappe{
                 position: relative;
                 width: 130px;
                 height: 110px;
+                z-index : 8;
                 top: -250px;
                 left: 100px;
                 .multBanana3{
@@ -168,9 +168,6 @@ body {
         left : 13px;
         z-index : 41;
         transform : rotate(-2deg) translate(8%, -5%);
-       
-
-
     }
 }
 
@@ -188,6 +185,9 @@ body {
     height : 80px;
     width : 3px;
     background-image: repeating-linear-gradient(-40deg,black 0%,black 5%,rgb(82, 49, 6)5%,rgb(156, 89, 12)10%)
+}
+.pointer{
+    cursor: pointer;
 }
 .grayOut{
     filter: grayscale(1);
