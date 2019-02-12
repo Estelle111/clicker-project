@@ -17,6 +17,8 @@ body {
 #page{
     display:grid;
     grid-template-columns: 10% 20% 6% 28% 6% 20% 10%;
+    width: 1500px;
+    margin: auto;
     .leftColumn{
         display: flex;
         flex-direction:column;
@@ -40,6 +42,7 @@ body {
                 z-index : 4;
                 text-align: center;
                 vertical-align: middle;
+                color: yellow;
             }
             #bananaGrappe{
                 position: absolute;
