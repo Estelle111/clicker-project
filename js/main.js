@@ -44,6 +44,7 @@ window.onload = () => {
         // Increase score by bps every second
         setInterval(()=>{
             game.score+=game.autoclick.bps
+            game.checkPrice();
             game.updateAffichageScore(game.score);
             game.multiplier.updateAffichageMultiple();
             game.autoclick.updateAffichageAutoclick();
@@ -77,7 +78,7 @@ window.onload = () => {
         })
         // Create event listener on autoclick button
         autoObject = game.autoclick
-        game.autoBtn.addEventListener("click",() => {
+        game.monkey.addEventListener("click",() => {
             if (game.isBuyable(game.score,autoObject.price) == true) { 
                 game.score = game.payForUpgrade(game.score,autoObject.price)
                 autoObject.autoFlow();
@@ -111,6 +112,7 @@ window.onload = () => {
         // Properties of the Game - Add buttons from the DOM into props - Creates new objects
         this.clickBtn = document.querySelector('#hClick')
         this.multBtn = document.querySelector('#hMultiplier')
+        this.monkey = document.querySelector('.monkey');
         this.autoBtn = document.querySelector('#hAutoclick')
         this.bonusBtn = document.querySelector('#hBonus')
         this.resetBtn = document.querySelector('#hReset')
@@ -148,14 +150,16 @@ window.onload = () => {
             btn = btnType
             if (game.isBuyable(score,price)){
                 btn.disabled=false;
+                btn.classList.remove('grayOut')
             }else{
-                btn.disabled=true;
+                btn.disabled = true;
+                btn.classList.add('grayOut')
             }
         }
         // Cycle through each upgrade object and launch the btn_enabler_disabler method
         this.checkPrice = function(){
             game.buttonEnableDisable(game.score,game.multiplier.price,game.multBtn)
-            game.buttonEnableDisable(game.score,game.autoclick.price,game.autoBtn) 
+            game.buttonEnableDisable(game.score,game.autoclick.price,game.monkey) 
         }
     }
 

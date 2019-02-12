@@ -2,6 +2,7 @@
 @import 'plank.scss';
 @import 'banana.scss';
 @import 'bananaMult.scss';
+@import 'monkey.scss';
 
 html {
     min-height: 100%;
@@ -56,13 +57,19 @@ body {
         flex-direction:column;
         grid-column : 6 / span 1;
         .autoplank{
-            .autoTxt{
-                position : absolute;;
-                top : 50%;
-                width : 20%;
+            .auto1Txt{
+                position : relative;
+                top:-550px;
+                display: flex;
+                flex-direction: column;
                 z-index : 4;
                 text-align: center;
-                vertical-align: middle;
+                justify-content: space-around;
+                cursor: pointer;
+                #hAutoclick{
+                    margin-top : 2vh;
+                    color: yellow;
+                }
             }
         }
     }
@@ -116,6 +123,9 @@ body {
     height : 8vh;
     width : 3px;
     background-image: repeating-linear-gradient(-40deg,black 0%,black 5%,rgb(82, 49, 6)5%,rgb(156, 89, 12)10%)
+}
+.grayOut{
+    filter: grayscale(1);
 }
 // leaf background
 .leafLeftBot {

@@ -1,0 +1,140 @@
+.monkey {
+	position: relative;
+  	margin: auto;
+  	display: block;
+  	width: 125px;
+  	height: 125px;
+  	margin-top: 5%;
+}
+
+.head {
+	position: absolute;
+	width: 95px;
+	height: 100px;
+	border-radius: 100%;
+	background: #9b7b53;
+	z-index: 100;
+	top: 10%;
+	left: 10%;
+}
+
+.earLeft {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	background: #9b7b53;
+	z-index: 98;
+	top: 33%;
+}
+
+.earRight {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	background: #9b7b53;
+	z-index: 98;
+	top: 33%;
+	left: 69%;
+}
+
+.innerEarLeft {
+	position: absolute;
+	width: 27.5px;
+	height: 27.5px;
+	border-radius: 100%;
+	z-index: 99;
+   	background: #fff6e0;
+   	top: 10%;
+   	left: 5%;
+}
+
+.innerEarRight {
+   	position: absolute;
+	width: 27.5px;
+	height: 27.5px;
+	border-radius: 100%;
+	z-index: 99;
+   	background: #fff6e0;
+   	top: 10%;
+   	left: 15%;
+}
+
+.lowerWhite {
+	position: absolute;
+	width: 85px;
+	height: 60px;
+	border-radius: 50%;
+	z-index: 101;
+	background: #fff6e0;
+	top: 42%;
+	left: 14%;
+}
+
+.upperWhite {
+	position: absolute;
+	width: 70px;;
+	height: 75px;
+	border-radius: 100%;
+	z-index: 101;
+	background: #fff6e0;
+	top: 25%;
+	left: 20%;
+}
+
+.eyeLeft {
+	position: absolute;
+	width: 7.5px;
+	height: 7.5px;
+	border-radius: 100%;
+	z-index: 102;
+	background: #543f22;
+	top: 30%;
+	left: 20%;
+}
+
+.eyeRight {
+	position: absolute;
+	width: 7.5px;
+	height: 7.5px;
+	border-radius: 100%;
+	z-index: 102;
+	background: #543f22;
+	top: 30%;
+	left: 70%;
+}
+
+.noseLeft {
+	position: absolute;
+	width: 7.5px;
+	height: 1px;
+	border-radius: 100%;
+	z-index: 102;
+	background: #543f22;
+	top: 55%;
+	left: 38%;
+}
+
+.noseRight {
+	position: absolute;
+	width: 7.5px;
+	height: 1px;
+	border-radius: 100%;
+	z-index: 102;
+	background: #543f22;
+	top: 55%;
+	left: 52%;
+}
+
+.mouth {
+   	position: absolute;
+   	width: 45px;
+	height: 15px;
+	z-index: 102;
+	top: 65%;
+	left: 17%;
+	border: solid 2px #543f22;
+    border-color:  transparent transparent #543f22 transparent;
+    border-radius: 100%;
+}
