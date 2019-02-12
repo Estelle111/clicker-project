@@ -212,5 +212,17 @@ body {
         //text-shadow:0 4px 0 rgb(255, 96, 0), 0 -4px 0 rgb(255, 139, 0);
         font-size : 77px ; 
         text-shadow: 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60;
+    }
 
+@font-face {
+        font-family: "Westmeath";
+        src: url("../font/Good Choice.ttf") format("truetype");
+    }
+
+    #hScore {
+        text-align: center;
+        font-size : 30px ; 
+        color : white ; 
+        font-family: "Westmeath",arial,sans-serif;
+        font-family: 'Acme', sans-serif;
     }

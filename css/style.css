@@ -361,6 +361,16 @@ h1 {
   text-shadow: 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60;
 }
 
-/* police d'écriture */
+@font-face {
+  font-family: "Westmeath";
+  src: url("../font/Good Choice.ttf") format("truetype");
+}
+#hScore {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-family: "Westmeath", arial, sans-serif;
+  font-family: "Acme", sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */
