@@ -45,6 +45,8 @@ window.onload = () => {
         setInterval(()=>{
             game.score+=game.autoclick.bps
             game.updateAffichageScore(game.score);
+            game.multiplier.updateAffichageMultiple();
+            game.autoclick.updateAffichageAutoclick();
         }, 1000);
         
         // Event Listener for click on reset button
@@ -127,7 +129,7 @@ window.onload = () => {
         }
         // Update score display on index.html
         this.updateAffichageScore = function (score) {
-            document.querySelector('#hScore').innerHTML = `${score.toFixed(2)} banana(s)`
+            document.querySelector('#hScore').innerHTML = `${score.toFixed(0)} banana(s)`
         }
         // Update bps display on index.html
         this.updateAffichageBps = function (bps) {

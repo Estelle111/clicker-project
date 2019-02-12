@@ -10,11 +10,13 @@
     <script type='text/javascript' src='js/main.js'></script>
 </head>
 <body>
+
+    <!-- Main content - divided in three columns -->
     <div id="page">
-        <div class="leftColumn">
-            <div class="rope"></div>
-            <div class="infos">
-                <div class="plank small">
+        <div class="leftColumn"> <!-- Left column -- Contains 2 pannels (one with the game info and the second with the multiplier button-->
+            <div class="rope"></div> <!-- Rope div-->
+            <div class="infos"> <!-- Pannel div-->
+                <div class="plank small"> <!-- Div creating the plank texture-->
                     <div class="texture3">
                         <div class="nail pos1"></div>
                         <div class="nail pos2"></div>
@@ -47,7 +49,7 @@
                         <div class="nail pos4"></div>
                     </div>
                 </div>
-                <div class="infoTxt">
+                <div class="infoTxt"> <!-- Div containing the info -- placed above the plank texture-->
                     <div id="hScore">0 bananas</div>
                     <div id="hPerSecond">0 banana(s)/second</div>
                 </div>
@@ -96,13 +98,13 @@
                 </div>
             </div>
         </div>
-        <div class="centralColumn">
+        <div class="centralColumn"> <!-- Central column -- Contains the title and the banana icon-->
                 <h1>Jungle Banana Jungle</h1>
                 <button id="hClick">click here</button>
                 <button id="hBonus">bonus</button>
                 <button id="hReset">reset memory</button>
         </div>
-        <div class="rightColumn">
+        <div class="rightColumn"> <!-- Right column -- Contains the autoclick buttons and infos-->
                 <div class="rope"></div>
                 <div class="autoplank">
                     <div class="plank big">
