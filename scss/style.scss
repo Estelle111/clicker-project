@@ -21,6 +21,9 @@ body {
 }
 #page{
     overflow: auto;
+    @media only screen and (max-width: 950px){
+        overflow-y: scroll;
+    }
     display:grid;
     grid-template-columns: 10% 20% 6% 28% 6% 20% 10%;
     width: 1600px;

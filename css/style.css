@@ -418,6 +418,11 @@ body {
   height: 800px;
   margin: auto;
 }
+@media only screen and (max-width: 950px) {
+  #page {
+    overflow-y: scroll;
+  }
+}
 #page .leftColumn {
   height: 800px;
   display: flex;
