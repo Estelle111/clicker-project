@@ -112,7 +112,11 @@ body {
         }
         #hBonus{
             position: fixed;
-            top: 60vh;
+            cursor: pointer;
+            top: 46vh;
+            width: 200px;
+            height: 200px;
+            left: 738px;
         }
     }
     .rightColumn{
