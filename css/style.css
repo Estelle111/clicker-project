@@ -514,7 +514,7 @@ body {
 }
 #page .leftColumn .mult .multTxt {
   position: relative;
-  top: -20px;
+  top: -100px;
   width: 330px;
   z-index: 4;
   text-align: center;
@@ -522,14 +522,16 @@ body {
   color: yellow;
 }
 #page .leftColumn .mult #bananaGrappe {
+  cursor: pointer;
   position: relative;
   width: 130px;
   height: 110px;
-  top: -230px;
-  left: 95px;
+  top: -250px;
+  left: 100px;
 }
 #page .leftColumn .mult #bananaGrappe .multBanana3 {
   position: absolute;
+  height: 110px;
   top: 2%;
   left: 21%;
   z-index: 4;
@@ -537,15 +539,17 @@ body {
 }
 #page .leftColumn .mult #bananaGrappe .multBanana2 {
   position: absolute;
-  top: -4%;
-  left: 0%;
+  height: 110px;
+  top: 0%;
+  left: 8%;
   z-index: 4;
   transform: rotate(30deg);
 }
 #page .leftColumn .mult #bananaGrappe .multBanana1 {
   position: absolute;
-  top: -10%;
-  left: -18%;
+  height: 110px;
+  top: -4%;
+  left: -5%;
   z-index: 4;
   transform: rotate(45deg);
 }
@@ -808,7 +812,13 @@ body {
   font-size: 35px;
   color: #eae4cc;
   font-family: "Westmeath", arial, sans-serif;
-  text-shadow: 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61;
+}
+
+#hMultiplier {
+  text-align: center;
+  font-size: 35px;
+  color: #eae4cc;
+  font-family: "Westmeath", arial, sans-serif;
 }
 
 @font-face {
@@ -820,7 +830,6 @@ body {
   font-size: 23px;
   color: #eae4cc;
   font-family: "Westmeath0", arial, sans-serif;
-  text-shadow: 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61;
 }
 
 @font-face {
@@ -832,7 +841,6 @@ body {
   color: #eae4cc;
   font-size: 23px;
   font-family: "Westmeath1", arial, sans-serif;
-  text-shadow: 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61;
 }
 
 @font-face {
@@ -844,7 +852,6 @@ body {
   color: #eae4cc;
   font-size: 29px;
   font-family: "Westmeath2", arial, sans-serif;
-  text-shadow: 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61;
 }
 
 /*police d'écriture */
