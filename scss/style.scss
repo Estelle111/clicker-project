@@ -18,12 +18,12 @@ body {
     
 .hoverable{
     &:hover{
-        transform:scale(1.1);
+        // transform:scale(1.1);
     }
 }
 #page{
     overflow: auto;
-    @media only screen and (max-height: 950px){
+    @media only screen and (max-height: 850px){
         overflow-y: scroll;
     }
     display:grid;
@@ -49,21 +49,22 @@ body {
             }
         }
         .mult{
+            height: 290px;
             .multTxt{
-                position : absolute;
-                top : 70%;
-                width : 20%;
+                position : relative;
+                top : -20px;
+                width : 330px;
                 z-index : 4;
                 text-align: center;
                 vertical-align: middle;
                 color: yellow;
             }
             #bananaGrappe{
-                position: absolute;
-                width: 8%;
-                height: 11%;
-                top: 55%;
-                left: 17%;
+                position: relative;
+                width: 130px;
+                height: 110px;
+                top: -230px;
+                left: 95px;
                 .multBanana3{
                     position: absolute;
                     top: 2%;

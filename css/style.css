@@ -478,10 +478,6 @@ body {
   overflow: hidden;
 }
 
-.hoverable:hover {
-  transform: scale(1.1);
-}
-
 #page {
   overflow: auto;
   display: grid;
@@ -490,7 +486,7 @@ body {
   height: 800px;
   margin: auto;
 }
-@media only screen and (max-height: 950px) {
+@media only screen and (max-height: 850px) {
   #page {
     overflow-y: scroll;
   }
@@ -513,21 +509,24 @@ body {
   line-height: 40px;
   color: yellow;
 }
+#page .leftColumn .mult {
+  height: 290px;
+}
 #page .leftColumn .mult .multTxt {
-  position: absolute;
-  top: 70%;
-  width: 20%;
+  position: relative;
+  top: -20px;
+  width: 330px;
   z-index: 4;
   text-align: center;
   vertical-align: middle;
   color: yellow;
 }
 #page .leftColumn .mult #bananaGrappe {
-  position: absolute;
-  width: 8%;
-  height: 11%;
-  top: 55%;
-  left: 17%;
+  position: relative;
+  width: 130px;
+  height: 110px;
+  top: -230px;
+  left: 95px;
 }
 #page .leftColumn .mult #bananaGrappe .multBanana3 {
   position: absolute;
