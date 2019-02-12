@@ -320,6 +320,9 @@ body {
   z-index: 25;
   cursor: pointer;
 }
+.reset .rope {
+  height: 4vh;
+}
 .reset .plankReset {
   width: 150px;
   height: 30px;
@@ -344,21 +347,21 @@ body {
 }
 
 .rope {
-  height: 4vh;
+  height: 8vh;
   display: flex;
   justify-content: space-around;
 }
 
 .leftRope {
-  height: 4vh;
+  height: 8vh;
   width: 3px;
-  background-image: repeating-linear-gradient(-40deg, black 0%, black 5%, #523106 10%, #a05b0d 20%);
+  background-image: repeating-linear-gradient(-40deg, black 0%, black 5%, #523106 5%, #a05b0d 10%);
 }
 
 .rightRope {
-  height: 4vh;
+  height: 8vh;
   width: 3px;
-  background-image: repeating-linear-gradient(-40deg, black 0%, black 5%, #523106 10%, #9c590c 20%);
+  background-image: repeating-linear-gradient(-40deg, black 0%, black 5%, #523106 5%, #9c590c 10%);
 }
 
 .leafLeftBot {
