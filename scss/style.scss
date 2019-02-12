@@ -2,7 +2,9 @@
 @import 'plank.scss';
 @import 'banana.scss';
 @import 'bananaMult.scss';
+@import 'bonus.scss';
 @import 'monkey.scss';
+
 
 html {
     min-height: 100%;
@@ -20,6 +22,10 @@ body {
     }
 }
 #page{
+    overflow: auto;
+    @media only screen and (max-height: 950px){
+        overflow-y: scroll;
+    }
     display:grid;
     grid-template-columns: 10% 20% 6% 28% 6% 20% 10%;
     width: 1600px;
@@ -31,13 +37,14 @@ body {
         flex-direction:column;
         grid-column : 2 / span 1;
         .infos{
+            height: 290px;
             .infoTxt{
-                position : absolute;
-                top : 20%;
-                width : 20%;
+                position : relative;
+                top : -190px;
+                width : 330px;
                 z-index : 4;
                 text-align: center;
-                vertical-align: middle;
+                line-height: 40px;
                 color : yellow;
             }
         }
@@ -82,12 +89,16 @@ body {
         }
     }
     .centralColumn{
-        display: flex;
-        flex-direction:column;
-        justify-content: space-around;
         grid-column : 4 / span 1;
         h1{
             color : yellow;
+            position: fixed;
+            top: 15vh;
+            width: 448px;
+        }
+        #hClick{
+            position: fixed;
+            top: 60vh;
         }
     }
     .rightColumn{
