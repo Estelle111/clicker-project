@@ -158,6 +158,242 @@ table {
   height: 250px;
 }
 
+.banana {
+  width: 6em;
+  height: 6em;
+  background-color: transparent;
+  box-shadow: -1.1em 1.1em 0 0 #fcd110;
+  border-radius: 50%;
+  position: relative;
+  top: -0.9em;
+  left: 6.6em;
+  transform: scale(2);
+}
+
+.banana:before {
+  content: "";
+  width: 0.3em;
+  height: 0.3em;
+  transform: rotate(45deg);
+  background-color: #937714;
+  position: absolute;
+  top: 5.1em;
+  left: 4.5em;
+  z-index: 10;
+}
+
+.banana:after {
+  content: "";
+  width: 0.4em;
+  height: 0.8em;
+  transform: rotate(31deg);
+  background-color: #b3bb03;
+  position: absolute;
+  top: 1.1em;
+  left: 0.2em;
+  z-index: 10;
+}
+
+.banana-line {
+  width: 5.5em;
+  height: 5.8em;
+  background-color: transparent;
+  box-shadow: -0.4em 0.4em 0 0 #ffe23c;
+  border-radius: 50%;
+  position: relative;
+  top: -6.4em;
+  left: 6.5em;
+  transform: scale(2) rotate(-4deg);
+}
+
+.bananaMult {
+  width: 6em;
+  height: 6em;
+  background-color: transparent;
+  box-shadow: -1.1em 1.1em 0 0 #fcd110;
+  border-radius: 50%;
+  position: relative;
+  top: -0.9em;
+  left: 1.6em;
+}
+
+.bananaMult:before {
+  content: "";
+  width: 0.3em;
+  height: 0.3em;
+  transform: rotate(45deg);
+  background-color: #937714;
+  position: absolute;
+  top: 5.4em;
+  left: 4.3em;
+  z-index: 1;
+}
+
+.bananaMult:after {
+  content: "";
+  width: 0.4em;
+  height: 0.8em;
+  transform: rotate(31deg);
+  background-color: #b3bb03;
+  position: absolute;
+  top: 1.1em;
+  left: 0.2em;
+  z-index: 1;
+}
+
+.banana-lineMult {
+  width: 5.5em;
+  height: 5.8em;
+  background-color: transparent;
+  box-shadow: -0.4em 0.4em 0 0 #ffe23c;
+  border-radius: 50%;
+  position: relative;
+  top: -6.7em;
+  left: 1.7em;
+  transform: rotate(-4deg);
+}
+
+.monkey {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 125px;
+  height: 125px;
+  margin-top: 5%;
+}
+
+.head {
+  position: absolute;
+  width: 95px;
+  height: 100px;
+  border-radius: 100%;
+  background: #9b7b53;
+  z-index: 100;
+  top: 10%;
+  left: 10%;
+}
+
+.earLeft {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background: #9b7b53;
+  z-index: 98;
+  top: 33%;
+}
+
+.earRight {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background: #9b7b53;
+  z-index: 98;
+  top: 33%;
+  left: 69%;
+}
+
+.innerEarLeft {
+  position: absolute;
+  width: 27.5px;
+  height: 27.5px;
+  border-radius: 100%;
+  z-index: 99;
+  background: #fff6e0;
+  top: 10%;
+  left: 5%;
+}
+
+.innerEarRight {
+  position: absolute;
+  width: 27.5px;
+  height: 27.5px;
+  border-radius: 100%;
+  z-index: 99;
+  background: #fff6e0;
+  top: 10%;
+  left: 15%;
+}
+
+.lowerWhite {
+  position: absolute;
+  width: 85px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 101;
+  background: #fff6e0;
+  top: 42%;
+  left: 14%;
+}
+
+.upperWhite {
+  position: absolute;
+  width: 70px;
+  height: 75px;
+  border-radius: 100%;
+  z-index: 101;
+  background: #fff6e0;
+  top: 25%;
+  left: 20%;
+}
+
+.eyeLeft {
+  position: absolute;
+  width: 7.5px;
+  height: 7.5px;
+  border-radius: 100%;
+  z-index: 102;
+  background: #543f22;
+  top: 30%;
+  left: 20%;
+}
+
+.eyeRight {
+  position: absolute;
+  width: 7.5px;
+  height: 7.5px;
+  border-radius: 100%;
+  z-index: 102;
+  background: #543f22;
+  top: 30%;
+  left: 70%;
+}
+
+.noseLeft {
+  position: absolute;
+  width: 7.5px;
+  height: 1px;
+  border-radius: 100%;
+  z-index: 102;
+  background: #543f22;
+  top: 55%;
+  left: 38%;
+}
+
+.noseRight {
+  position: absolute;
+  width: 7.5px;
+  height: 1px;
+  border-radius: 100%;
+  z-index: 102;
+  background: #543f22;
+  top: 55%;
+  left: 52%;
+}
+
+.mouth {
+  position: absolute;
+  width: 45px;
+  height: 15px;
+  z-index: 102;
+  top: 65%;
+  left: 17%;
+  border: solid 2px #543f22;
+  border-color: transparent transparent #543f22 transparent;
+  border-radius: 100%;
+}
+
 html {
   min-height: 100%;
 }
@@ -168,9 +404,13 @@ body {
   overflow: hidden;
 }
 
+.hoverable:hover {
+  transform: scale(1.1);
+}
+
 #page {
   display: grid;
-  grid-template-columns: 10% 20% 10% 20% 10% 20% 10%;
+  grid-template-columns: 10% 20% 6% 28% 6% 20% 10%;
 }
 #page .leftColumn {
   display: flex;
@@ -194,6 +434,34 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+#page .leftColumn .mult #bananaGrappe {
+  position: absolute;
+  width: 8%;
+  height: 11%;
+  top: 55%;
+  left: 17%;
+}
+#page .leftColumn .mult #bananaGrappe .multBanana3 {
+  position: absolute;
+  top: 2%;
+  left: 21%;
+  z-index: 4;
+  transform: rotate(10deg);
+}
+#page .leftColumn .mult #bananaGrappe .multBanana2 {
+  position: absolute;
+  top: -4%;
+  left: 0%;
+  z-index: 4;
+  transform: rotate(30deg);
+}
+#page .leftColumn .mult #bananaGrappe .multBanana1 {
+  position: absolute;
+  top: -10%;
+  left: -18%;
+  z-index: 4;
+  transform: rotate(45deg);
+}
 #page .centralColumn {
   display: flex;
   flex-direction: column;
@@ -208,38 +476,79 @@ body {
   flex-direction: column;
   grid-column: 6/span 1;
 }
-#page .rightColumn .autoplank .autoTxt {
-  position: absolute;
-  top: 50%;
-  width: 20%;
-  z-index: 4;
-  text-align: center;
-  vertical-align: middle;
-}
-#page .rightColumn {
+#page .rightColumn .autoplank .auto1Txt {
+  position: relative;
+  top: -550px;
   display: flex;
   flex-direction: column;
-  grid-column: 6/span 1;
-}
-#page .rightColumn .autoplank .autoTxt {
-  position: absolute;
-  top: 50%;
-  width: 20%;
   z-index: 4;
   text-align: center;
-  vertical-align: middle;
+  justify-content: space-around;
+}
+#page .rightColumn .autoplank .auto1Txt .monkey {
+  cursor: pointer;
+}
+#page .rightColumn .autoplank .auto1Txt #hAutoclick {
+  margin-top: 2vh;
+  color: yellow;
+}
+
+.reset {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 170px;
+  height: 50px;
+  z-index: 25;
+  cursor: pointer;
+}
+.reset .rope {
+  height: 4vh;
+}
+.reset .plankReset {
+  width: 150px;
+  height: 30px;
+  z-index: 40;
+  background-color: #211600;
+  overflow: hidden;
+  transform: rotate(-2deg) translate(3%, -5%);
+  background: linear-gradient(0deg, rgba(238, 196, 135, 0.5) 0%, rgba(243, 207, 154, 0.5) 3%, rgba(248, 216, 162, 0.5) 6%, rgba(243, 207, 154, 0.5) 6%, rgba(243, 207, 154, 0.5) 9%, rgba(241, 202, 136, 0.5) 12%, rgba(243, 207, 154, 0.5) 15%, rgba(244, 208, 158, 0.5) 17%, rgba(243, 207, 154, 0.5) 19%, rgba(243, 207, 154, 0.5) 21%, rgba(250, 221, 176, 0.5) 23%, rgba(250, 221, 176, 0.5) 25%, rgba(243, 207, 154, 0.5) 27%, rgba(238, 200, 138, 0.5) 29%, rgba(243, 207, 154, 0.5) 29%, rgba(243, 207, 154, 0.5) 32%, rgba(243, 207, 154, 0.5) 34%, rgba(243, 207, 154, 0.5) 37%, rgba(250, 221, 176, 0.5) 40%, rgba(250, 221, 176, 0.5) 43%, rgba(243, 207, 154, 0.5) 43%, rgba(243, 207, 154, 0.5) 44%, rgba(243, 207, 154, 0.5) 47%, rgba(238, 200, 138, 0.5) 49%, rgba(243, 207, 154, 0.5) 52%, rgba(250, 221, 176, 0.5) 54%, rgba(244, 208, 158, 0.5) 56%, rgba(243, 207, 154, 0.5) 59%, rgba(244, 208, 158, 0.5) 61%, rgba(250, 221, 176, 0.5) 64%, rgba(243, 207, 154, 0.5) 64%, rgba(244, 208, 158, 0.5) 66%, rgba(243, 207, 154, 0.5) 69%, rgba(248, 216, 162, 0.5) 71%, rgba(243, 207, 154, 0.5) 74%, rgba(243, 207, 154, 0.5) 76%, rgba(243, 207, 154, 0.5) 77%, rgba(243, 207, 154, 0.5) 80%, rgba(250, 221, 176, 0.5) 81%, rgba(243, 207, 154, 0.5) 83%, rgba(250, 221, 176, 0.5) 83%, rgba(250, 221, 176, 0.5) 85%, rgba(243, 207, 154, 0.5) 87%, rgba(250, 221, 176, 0.5) 89%, rgba(250, 221, 176, 0.5) 91%, rgba(243, 207, 154, 0.5) 92%, rgba(248, 216, 162, 0.5) 96%, rgba(243, 207, 154, 0.5) 97%, rgba(243, 207, 154, 0.5) 97%, rgba(243, 207, 154, 0.5) 98%, rgba(243, 207, 154, 0.5) 100%), linear-gradient(180deg, rgba(238, 196, 135, 0.3) 0%, rgba(243, 207, 154, 0.3) 3%, rgba(248, 216, 162, 0.3) 6%, rgba(243, 207, 154, 0.3) 6%, rgba(243, 207, 154, 0.3) 9%, rgba(241, 202, 136, 0.3) 12%, rgba(243, 207, 154, 0.3) 15%, rgba(244, 208, 158, 0.3) 17%, rgba(243, 207, 154, 0.3) 19%, rgba(243, 207, 154, 0.3) 21%, rgba(250, 221, 176, 0.3) 23%, rgba(250, 221, 176, 0.3) 25%, rgba(243, 207, 154, 0.3) 27%, rgba(238, 200, 138, 0.3) 29%, rgba(243, 207, 154, 0.3) 29%, rgba(243, 207, 154, 0.3) 32%, rgba(243, 207, 154, 0.3) 34%, rgba(243, 207, 154, 0.3) 37%, rgba(250, 221, 176, 0.3) 40%, rgba(250, 221, 176, 0.3) 43%, rgba(243, 207, 154, 0.3) 43%, rgba(243, 207, 154, 0.3) 44%, rgba(243, 207, 154, 0.3) 47%, rgba(238, 200, 138, 0.3) 49%, rgba(243, 207, 154, 0.3) 52%, rgba(250, 221, 176, 0.3) 54%, rgba(244, 208, 158, 0.3) 56%, rgba(243, 207, 154, 0.3) 59%, rgba(244, 208, 158, 0.3) 61%, rgba(250, 221, 176, 0.3) 64%, rgba(243, 207, 154, 0.3) 64%, rgba(244, 208, 158, 0.3) 66%, rgba(243, 207, 154, 0.3) 69%, rgba(248, 216, 162, 0.3) 71%, rgba(243, 207, 154, 0.3) 74%, rgba(243, 207, 154, 0.3) 76%, rgba(243, 207, 154, 0.3) 77%, rgba(243, 207, 154, 0.3) 80%, rgba(250, 221, 176, 0.3) 81%, rgba(243, 207, 154, 0.3) 83%, rgba(250, 221, 176, 0.3) 83%, rgba(250, 221, 176, 0.3) 85%, rgba(243, 207, 154, 0.3) 87%, rgba(250, 221, 176, 0.3) 89%, rgba(250, 221, 176, 0.3) 91%, rgba(243, 207, 154, 0.3) 92%, rgba(248, 216, 162, 0.3) 96%, rgba(243, 207, 154, 0.3) 97%, rgba(243, 207, 154, 0.3) 97%, rgba(243, 207, 154, 0.3) 98%, rgba(243, 207, 154, 0.3) 100%), linear-gradient(0deg, rgba(238, 196, 135, 0.3) 0%, rgba(243, 207, 154, 0.3) 3%, rgba(238, 200, 138, 0.3) 49%, rgba(243, 207, 154, 0.3) 52%, rgba(250, 221, 176, 0.3) 54%, rgba(244, 208, 158, 0.3) 56%, rgba(243, 207, 154, 0.2) 59%, rgba(244, 208, 158, 0.3) 61%, rgba(250, 221, 176, 0.3) 64%, rgba(243, 207, 154, 0.3) 64%, rgba(244, 208, 158, 0.3) 66%, rgba(243, 207, 154, 0.3) 69%, rgba(248, 216, 162, 0.3) 71%, rgba(243, 207, 154, 0.3) 74%, rgba(243, 207, 154, 0.3) 76%, rgba(243, 207, 154, 0.3) 77%, rgba(243, 207, 154, 0.3) 80%, rgba(250, 221, 176, 0.3) 81%, rgba(243, 207, 154, 0.3) 83%, rgba(250, 221, 176, 0.3) 83%, rgba(250, 221, 176, 0.3) 85%, rgba(243, 207, 154, 0.3) 87%, rgba(250, 221, 176, 0.3) 89%, rgba(250, 221, 176, 0.3) 91%, rgba(243, 207, 154, 0.3) 92%, rgba(248, 216, 162, 0.3) 96%, rgba(243, 207, 154, 0.3) 97%, rgba(243, 207, 154, 0.3) 97%, rgba(243, 207, 154, 0.3) 98%, rgba(243, 207, 154, 0.3) 100%);
+  background-size: 10% 70%, 80% 80%, 100% 10%;
+  background-position: 50% 50%, 70% 70%, 30% 30%;
+  background-color: #211600;
+  z-index: 2;
+  filter: brightness(0.3) hue-rotate(-12deg) saturate(1.4);
+}
+.reset #hReset {
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  z-index: 41;
+  transform: rotate(-2deg) translate(8%, -5%);
+  color: yellow;
 }
 
 .rope {
-  height: 12vh;
-  width: 100%;
-  background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 32%, #7e653f 32%, #7e653f 34%, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0) 65%, #7e653f 65%, #7e653f 67%, rgba(0, 0, 0, 0) 67%, rgba(0, 0, 0, 0) 100%);
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
 }
 
-.rope {
-  height: 12vh;
-  width: 100%;
-  background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 32%, #7e653f 32%, #7e653f 34%, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0) 65%, #7e653f 65%, #7e653f 67%, rgba(0, 0, 0, 0) 67%, rgba(0, 0, 0, 0) 100%);
+.leftRope {
+  height: 8vh;
+  width: 3px;
+  background-image: repeating-linear-gradient(-40deg, black 0%, black 5%, #523106 5%, #a05b0d 10%);
+}
+
+.rightRope {
+  height: 8vh;
+  width: 3px;
+  background-image: repeating-linear-gradient(-40deg, black 0%, black 5%, #523106 5%, #9c590c 10%);
+}
+
+.grayOut {
+  filter: grayscale(1);
+  cursor: default;
 }
 
 .leafLeftBot {
@@ -247,7 +556,7 @@ body {
   display: flex;
   flex-direction: column;
   top: 0;
-  left: -2%;
+  left: -3%;
   z-index: 9;
 }
 
@@ -260,27 +569,56 @@ body {
   z-index: 10;
 }
 
-.leafTop {
+.leafTopBot {
   position: absolute;
   display: flex;
   top: -6%;
-  left: 10%;
+  left: 2%;
+  z-index: 9;
 }
 
-.leafRight {
+.leafTopTop {
+  position: absolute;
+  display: flex;
+  top: -11%;
+  left: -2%;
+  z-index: 10;
+}
+
+.leafRightBot {
   position: absolute;
   display: flex;
   flex-direction: column;
   top: 0;
-  left: 92%;
+  left: 95%;
+  z-index: 9;
 }
 
-.leafBot {
+.leafRightTop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 5%;
+  left: 98%;
+  z-index: 10;
+}
+
+.leafBotBot {
   position: absolute;
   display: flex;
   flex-direction: row;
   top: 90%;
-  left: 10%;
+  left: 2%;
+  z-index: 9;
+}
+
+.leafBotTop {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 94%;
+  left: -2%;
+  z-index: 10;
 }
 
 .rotateTopBot {
@@ -293,6 +631,7 @@ body {
 
 .shapeLeaf {
   border-radius: 5px 250px 3px 300px;
+  border: 1px solid #2c2836;
   width: 150px;
   height: 150px;
 }

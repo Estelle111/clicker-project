@@ -1,5 +1,8 @@
 @import 'reset.scss';
 @import 'plank.scss';
+@import 'banana.scss';
+@import 'bananaMult.scss';
+@import 'monkey.scss';
 
 html {
     min-height: 100%;
@@ -11,9 +14,14 @@ body {
     overflow: hidden;
 }
     
+.hoverable{
+    &:hover{
+        transform:scale(1.1);
+    }
+}
 #page{
     display:grid;
-    grid-template-columns: 10% 20% 10% 20% 10% 20% 10%;
+    grid-template-columns: 10% 20% 6% 28% 6% 20% 10%;
     .leftColumn{
         display: flex;
         flex-direction:column;
@@ -38,6 +46,34 @@ body {
                 text-align: center;
                 vertical-align: middle;
             }
+            #bananaGrappe{
+                position: absolute;
+                width: 8%;
+                height: 11%;
+                top: 55%;
+                left: 17%;
+                .multBanana3{
+                    position: absolute;
+                    top: 2%;
+                    left: 21%;
+                    z-index: 4;
+                    transform: rotate(10deg);
+                }
+                .multBanana2{
+                    position: absolute;
+                    top: -4%;
+                    left: 0%;
+                    z-index: 4;
+                    transform: rotate(30deg);
+                }
+                .multBanana1{
+                    position: absolute;
+                    top: -10%;
+                    left: -18%;
+                    z-index: 4;
+                    transform: rotate(45deg);
+                }
+            }
         }
     }
     .centralColumn{
@@ -54,52 +90,84 @@ body {
         flex-direction:column;
         grid-column : 6 / span 1;
         .autoplank{
-            .autoTxt{
-                position : absolute;;
-                top : 50%;
-                width : 20%;
+            .auto1Txt{
+                position : relative;
+                top:-550px;
+                display: flex;
+                flex-direction: column;
                 z-index : 4;
                 text-align: center;
-                vertical-align: middle;
-            }
-        }
-    }
-    .rightColumn{
-        display: flex;
-        flex-direction:column;
-        grid-column : 6 / span 1;
-        .autoplank{
-            .autoTxt{
-                position : absolute;;
-                top : 50%;
-                width : 20%;
-                z-index : 4;
-                text-align: center;
-                vertical-align: middle;
+                justify-content: space-around;
+                .monkey{cursor:pointer}
+                #hAutoclick{
+                    margin-top : 2vh;
+                    color: yellow;
+                }
             }
         }
     }
 }
+.reset{
+    position : fixed;
+    top:0;
+    right:0;
+    width : 170px;
+    height : 50px;
+    z-index : 25;
+    cursor: pointer;
+    .rope{
+        height : 4vh;
+    }
+    .plankReset{
+        width : 150px;
+        height : 30px;
+        z-index : 40;
+        background-color:rgba(33, 22, 0, 1);
+        overflow:hidden;
+        transform : rotate(-2deg) translate(3%, -5%);
+        @include plank();
+        background-color:rgba(33, 22, 0, 1);
+        z-index: 2;
+        filter : brightness(0.3) hue-rotate(-12deg) saturate(1.4)
+    }
+    #hReset{
+        position : absolute;
+        top : 35px;
+        left : 20px;
+        z-index : 41;
+        transform : rotate(-2deg) translate(8%, -5%);
+        color : yellow;
 
-.rope{
-    height : 12vh;
-    width : 100%;
-    background-image: repeating-linear-gradient(90deg,rgba(0,0,0,0)0%, rgba(0,0,0,0)32%,rgb(126, 101, 63)32%,rgb(126, 101, 63)34%,rgba(0,0,0,0)34%,rgba(0,0,0,0)65%,rgb(126, 101, 63)65%,rgb(126, 101, 63)67%,rgba(0,0,0,0)67%,rgba(0,0,0,0)100%);
+
+    }
 }
 
 .rope{
-    height : 12vh;
-    width : 100%;
-    background-image: repeating-linear-gradient(90deg,rgba(0,0,0,0)0%, rgba(0,0,0,0)32%,rgb(126, 101, 63)32%,rgb(126, 101, 63)34%,rgba(0,0,0,0)34%,rgba(0,0,0,0)65%,rgb(126, 101, 63)65%,rgb(126, 101, 63)67%,rgba(0,0,0,0)67%,rgba(0,0,0,0)100%);
+    height : 8vh;
+    display : flex;
+    justify-content: space-around;
 }
-
+.leftRope {
+    height : 8vh;
+    width :3px;
+    background-image: repeating-linear-gradient(-40deg,black 0%,black 5%,rgb(82, 49, 6)5%,rgb(160, 91, 13)10%)
+}
+.rightRope{
+    height : 8vh;
+    width : 3px;
+    background-image: repeating-linear-gradient(-40deg,black 0%,black 5%,rgb(82, 49, 6)5%,rgb(156, 89, 12)10%)
+}
+.grayOut{
+    filter: grayscale(1);
+    cursor : default;
+}
 // leaf background
 .leafLeftBot {
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 0;
-    left: -2%;
+    left: -3%;
     z-index: 9;
 }
 
@@ -112,27 +180,56 @@ body {
     z-index: 10;
 }
 
-.leafTop {
+.leafTopBot {
     position: absolute;
     display: flex;  
     top: -6%;
-    left: 10%;
+    left: 2%;
+    z-index: 9;
 }
 
-.leafRight {
+.leafTopTop {
+    position: absolute;
+    display: flex;  
+    top: -11%;
+    left: -2%;
+    z-index: 10;
+}
+
+.leafRightBot {
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 0;  
-    left: 92%;
+    left: 95%;
+    z-index: 9;
 }
 
-.leafBot {
+.leafRightTop {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 5%;  
+    left: 98%;
+    z-index: 10;
+}
+
+.leafBotBot {
     position: absolute;
     display: flex;
     flex-direction: row;
     top: 90%;
-    left: 10%;
+    left: 2%;
+    z-index: 9;
+}
+
+.leafBotTop {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 94%;
+    left: -2%;
+    z-index: 10;
 }
 
 .rotateTopBot {
@@ -145,6 +242,7 @@ body {
 
 .shapeLeaf {
     border-radius: 5px 250px 3px 300px;
+    border: 1px solid rgb(44,40,54);
     width: 150px;
     height: 150px;
     .line {
@@ -203,7 +301,6 @@ body {
         font-family: "waltographUI";
         src: url("../public/fonts/waltographUI.ttf") format("truetype");
     }
-
     h1 {
         z-index : 25;
         text-align: center;
