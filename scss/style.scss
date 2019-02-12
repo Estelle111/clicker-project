@@ -101,7 +101,7 @@ body {
                 .monkey{cursor:pointer}
                 #hAutoclick{
                     margin-top : 2vh;
-                    color: yellow;
+                   
                 }
             }
         }
@@ -136,7 +136,7 @@ body {
         left : 20px;
         z-index : 41;
         transform : rotate(-2deg) translate(8%, -5%);
-        color : yellow;
+       
 
 
     }
@@ -297,42 +297,73 @@ body {
 }
     
 /* Police d'écriture */
-@font-face {
-        font-family: "waltographUI";
-        src: url("../public/fonts/waltographUI.ttf") format("truetype");
-    }
-    h1 {
-        z-index : 25;
-        text-align: center;
-        font-family: "waltographUI",arial,sans-serif;
-        color : yellow ; 
-        //text-shadow:0 4px 0 rgb(255, 96, 0), 0 -4px 0 rgb(255, 139, 0);
-        font-size : 77px ; 
-        text-shadow: 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60;
-    }
-
-@font-face {
-        font-family: "Westmeath";
-        src: url("../public/fonts/AlphaFridgeMagnetsAllCaps.ttf") format("truetype");
-    }
-
-    #hScore {
-        text-align: center;
-        font-size : 30px ; 
-        color : white ; 
-        font-family: "Westmeath",arial,sans-serif;
-       
-    }
+    @font-face {
+            font-family: "waltographUI";
+            src: url("../public/fonts/waltographUI.ttf") format("truetype");
+        }
+        #TitleFont, h1 {
+            z-index : 25;
+            text-align: center;
+            font-family: "waltographUI",arial,sans-serif;
+            color : yellow ; 
+            //text-shadow:0 4px 0 rgb(255, 96, 0), 0 -4px 0 rgb(255, 139, 0);
+            font-size : 77px ; 
+            text-shadow: 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60, 0 0 5px #d60;
+        }
 
     @font-face {
-        font-family: "Westmeath0";
-        src: url("../public/fonts/AlphaFridgeMagnetsAllCaps.ttf") format("truetype");
-    }
+            font-family: "Westmeath";
+            src: url("../public/fonts/AlphaFridgeMagnetsAllCaps.ttf") format("truetype");
+        }
 
-    #hPerSecond {
-        text-align: center;
-        font-size : 20px ; 
-        color : white ; 
-        font-family: "Westmeath0",arial,sans-serif;
-       
-    }
+        #hScore {
+            text-align: center;
+            font-size : 35px ; 
+            color : #eae4cc ; 
+            font-family: "Westmeath",arial,sans-serif;
+            text-shadow: 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61;
+        
+        }
+
+        @font-face {
+            font-family: "Westmeath0";
+            src: url("../public/fonts/AlphaFridgeMagnetsAllCaps.ttf") format("truetype");
+        }
+
+        #hPerSecond {
+            text-align: center;
+            font-size : 23px ; 
+            color : #eae4cc ; 
+            font-family: "Westmeath0",arial,sans-serif;
+            text-shadow: 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61;
+        
+        }
+        @font-face {
+            font-family: "Westmeath1";
+            src: url("../public/fonts/AlphaFridgeMagnetsAllCaps.ttf") format("truetype");
+        }
+
+    #hReset {
+            text-align: center;
+            color : #eae4cc ; 
+            font-size : 23px ; 
+            font-family: "Westmeath1",arial,sans-serif;
+            text-shadow: 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61;
+        
+        }
+
+        @font-face {
+            font-family: "Westmeath2";
+            src: url("../public/fonts/AlphaFridgeMagnetsAllCaps.ttf") format("truetype");
+        }
+
+    #hAutoclick {
+            text-align: center;
+            color : #eae4cc ; 
+            font-size : 29px ; 
+            font-family: "Westmeath2",arial,sans-serif;
+            text-shadow: 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61;
+        
+        }
+
+/*police d'écriture */ 
