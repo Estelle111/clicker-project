@@ -3,6 +3,7 @@
 @import 'banana.scss';
 @import 'bananaMult.scss';
 @import 'monkey.scss';
+@import 'bonus.scss';
 
 html {
     min-height: 100%;
@@ -100,6 +101,10 @@ body {
             width: 448px;
         }
         #hClick{
+            position: fixed;
+            top: 60vh;
+        }
+        #hBonus{
             position: fixed;
             top: 60vh;
         }
