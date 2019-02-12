@@ -68,7 +68,7 @@ window.onload = () => {
         })
         // Create event listener on multiply button
         multObject = game.multiplier
-        game.multBtn.addEventListener("click",() => {
+        document.querySelector('#bananaGrappe').addEventListener("click",() => {
             if (game.isBuyable(game.score,multObject.price) == true) { 
                 game.score = game.payForUpgrade(game.score,multObject.price)
                 multObject.multFlow()

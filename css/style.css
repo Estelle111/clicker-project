@@ -212,9 +212,9 @@ table {
   background-color: transparent;
   box-shadow: -1.1em 1.1em 0 0 #fcd110;
   border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 20%;
+  position: relative;
+  top: -0.9em;
+  left: 1.6em;
 }
 
 .bananaMult:before {
@@ -247,8 +247,8 @@ table {
   background-color: transparent;
   box-shadow: -0.4em 0.4em 0 0 #ffe23c;
   border-radius: 50%;
-  position: absolute;
-  top: -0.7em;
+  position: relative;
+  top: -6.7em;
   left: 1.7em;
   transform: rotate(-4deg);
 }
@@ -429,6 +429,34 @@ body {
   z-index: 4;
   text-align: center;
   vertical-align: middle;
+}
+#page .leftColumn .mult #bananaGrappe {
+  position: absolute;
+  width: 8%;
+  height: 11%;
+  top: 55%;
+  left: 16%;
+}
+#page .leftColumn .mult #bananaGrappe .multBanana3 {
+  position: absolute;
+  top: 2%;
+  left: 21%;
+  z-index: 4;
+  transform: rotate(10deg);
+}
+#page .leftColumn .mult #bananaGrappe .multBanana2 {
+  position: absolute;
+  top: -4%;
+  left: 0%;
+  z-index: 4;
+  transform: rotate(30deg);
+}
+#page .leftColumn .mult #bananaGrappe .multBanana1 {
+  position: absolute;
+  top: -10%;
+  left: -18%;
+  z-index: 4;
+  transform: rotate(45deg);
 }
 #page .centralColumn {
   display: flex;
