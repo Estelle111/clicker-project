@@ -150,12 +150,12 @@ table {
 
 .big {
   width: 100%;
-  height: 600px;
+  height: 630px;
 }
 
 .small {
   width: 100%;
-  height: 250px;
+  height: 280px;
 }
 
 .banana {
@@ -166,8 +166,9 @@ table {
   border-radius: 50%;
   position: relative;
   top: -0.9em;
-  left: 6.6em;
+  left: 11.6em;
   transform: scale(2);
+  cursor: pointer;
 }
 
 .banana:before {
@@ -177,7 +178,7 @@ table {
   transform: rotate(45deg);
   background-color: #937714;
   position: absolute;
-  top: 5.1em;
+  top: 5.2em;
   left: 4.5em;
   z-index: 10;
 }
@@ -202,8 +203,9 @@ table {
   border-radius: 50%;
   position: relative;
   top: -6.4em;
-  left: 6.5em;
+  left: 11.5em;
   transform: scale(2) rotate(-4deg);
+  cursor: pointer;
 }
 
 .bananaMult {
@@ -411,8 +413,12 @@ body {
 #page {
   display: grid;
   grid-template-columns: 10% 20% 6% 28% 6% 20% 10%;
+  width: 1600px;
+  height: 800px;
+  margin: auto;
 }
 #page .leftColumn {
+  height: 800px;
   display: flex;
   flex-direction: column;
   grid-column: 2/span 1;
@@ -433,6 +439,7 @@ body {
   z-index: 4;
   text-align: center;
   vertical-align: middle;
+  color: yellow;
 }
 #page .leftColumn .mult #bananaGrappe {
   position: absolute;
@@ -475,6 +482,10 @@ body {
   display: flex;
   flex-direction: column;
   grid-column: 6/span 1;
+  height: 800px;
+}
+#page .rightColumn .autoplank {
+  height: 630px;
 }
 #page .rightColumn .autoplank .auto1Txt {
   position: relative;
@@ -502,7 +513,13 @@ body {
   cursor: pointer;
 }
 .reset .rope {
-  height: 4vh;
+  height: 30px;
+}
+.reset .rope .leftRope {
+  height: 30px;
+}
+.reset .rope .rightRope {
+  height: 30px;
 }
 .reset .plankReset {
   width: 150px;
@@ -527,19 +544,19 @@ body {
 }
 
 .rope {
-  height: 8vh;
+  height: 80px;
   display: flex;
   justify-content: space-around;
 }
 
 .leftRope {
-  height: 8vh;
+  height: 80px;
   width: 3px;
   background-image: repeating-linear-gradient(-40deg, black 0%, black 5%, #523106 5%, #a05b0d 10%);
 }
 
 .rightRope {
-  height: 8vh;
+  height: 80px;
   width: 3px;
   background-image: repeating-linear-gradient(-40deg, black 0%, black 5%, #523106 5%, #9c590c 10%);
 }
