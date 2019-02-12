@@ -404,6 +404,10 @@ body {
   overflow: hidden;
 }
 
+.hoverable:hover {
+  transform: scale(1.1);
+}
+
 #page {
   display: grid;
   grid-template-columns: 10% 20% 6% 28% 6% 20% 10%;
@@ -480,6 +484,8 @@ body {
   z-index: 4;
   text-align: center;
   justify-content: space-around;
+}
+#page .rightColumn .autoplank .auto1Txt .monkey {
   cursor: pointer;
 }
 #page .rightColumn .autoplank .auto1Txt #hAutoclick {
