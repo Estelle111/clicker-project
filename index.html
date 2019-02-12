@@ -14,12 +14,18 @@
     <!-- Main content - divided in three columns -->
     <div id="page">
         <div class="leftColumn"> <!-- Left column -- Contains 2 pannels (one with the game info and the second with the multiplier button-->
-            <div class="rope"></div> <!-- Rope div-->
-            <div class="rope"></div>
-            <div class="rope"></div>
-            <div class="rope"></div>
-            <div class="rope"></div>
-            <div class="rope"></div>
+            <div class="rope">
+                <div class="leftRope"></div>
+                <div class="rightRope"></div>
+            </div> <!-- Rope div-->
+            <div class="rope">
+                    <div class="leftRope"></div>
+                    <div class="rightRope"></div>
+            </div>
+            <div class="rope">
+                    <div class="leftRope"></div>
+                    <div class="rightRope"></div>
+            </div>
             <div class="infos"> <!-- Pannel div-->
                 <div class="plank small"> <!-- Div creating the plank texture-->
                     <div class="texture3">
@@ -59,11 +65,12 @@
                     <div id="hPerSecond">0 banana(s)/second</div>
                 </div>
             </div>
-            <div class="rope"></div>
-            <div class="rope"></div>
-            <div class="rope"></div>
-            <div class="rope"></div>
-            <div class="rope"></div>
+            <div class="rope">                
+                <div class="leftRope"></div>
+                <div class="rightRope"></div></div>
+            <div class="rope">                
+                <div class="leftRope"></div>
+                <div class="rightRope"></div></div>
             <div class="mult">
                 <div class="plank small">
                     <div class="texture2">
@@ -113,59 +120,64 @@
                 <button id="hBonus">bonus</button>
         </div>
         <div class="rightColumn"> <!-- Right column -- Contains the autoclick buttons and infos-->
-                <div class="rope"></div>
-                <div class="rope"></div>
-                <div class="rope"></div>
-                <div class="rope"></div>
-                <div class="rope"></div>
-                <div class="rope"></div>
-                <div class="autoplank">
-                    <div class="plank big">
-                        <div class="texture1">
-                            <div class="nail pos1"></div>
-                            <div class="nail pos2"></div>
-                            <div class="nail pos4"></div>
-                        </div>
-                        <div class="texture2">
-                            <div class="nail pos1"></div>
-                            <div class="nail pos2"></div>
-                            <div class="nail pos3"></div>
-                            <div class="nail pos4"></div>
-                        </div>
-                        <div class="texture3">
-                            <div class="nail pos2"></div>
-                            <div class="nail pos4"></div>
-                        </div>
-                        <div class="texture4">
-                            <div class="nail pos1"></div>
-                            <div class="nail pos2"></div>
-                            <div class="nail pos3"></div>
-                            <div class="nail pos4"></div>
-                        </div>
-                        <div class="texture5">
-                            <div class="nail pos1"></div>
-                            <div class="nail pos3"></div>
-                            <div class="nail pos4"></div>
-                        </div>
-                        <div class="texture6">
-                            <div class="nail pos2"></div>
-                            <div class="nail pos3"></div>
-                            <div class="nail pos4"></div>
-                        </div>
+            <div class="rope">
+                <div class="leftRope"></div>
+                <div class="rightRope"></div>
+            </div>
+            <div class="rope">
+                <div class="leftRope"></div>
+                <div class="rightRope"></div>
+            </div>
+            <div class="autoplank">
+                <div class="plank big">
+                    <div class="texture1">
+                        <div class="nail pos1"></div>
+                        <div class="nail pos2"></div>
+                        <div class="nail pos4"></div>
                     </div>
-                    <div class="autoTxt">
-                        <button id="hAutoclick">autoclick</button>
+                    <div class="texture2">
+                        <div class="nail pos1"></div>
+                        <div class="nail pos2"></div>
+                        <div class="nail pos3"></div>
+                        <div class="nail pos4"></div>
+                    </div>
+                    <div class="texture3">
+                        <div class="nail pos2"></div>
+                        <div class="nail pos4"></div>
+                    </div>
+                    <div class="texture4">
+                        <div class="nail pos1"></div>
+                        <div class="nail pos2"></div>
+                        <div class="nail pos3"></div>
+                        <div class="nail pos4"></div>
+                    </div>
+                    <div class="texture5">
+                        <div class="nail pos1"></div>
+                        <div class="nail pos3"></div>
+                        <div class="nail pos4"></div>
+                    </div>
+                    <div class="texture6">
+                        <div class="nail pos2"></div>
+                        <div class="nail pos3"></div>
+                        <div class="nail pos4"></div>
                     </div>
                 </div>
-            </div>
-        </div> 
-        <div class="reset">
-            <div class="rope"></div>
-            <div class="plankReset">
-                <div class="texture2">
+                <div class="autoTxt">
+                    <button id="hAutoclick">autoclick</button>
                 </div>
             </div>
-            <div id="hReset">RESET DATA</div>
+        </div>
+    </div> 
+    <div class="reset">
+        <div class="rope">
+                <div class="leftRope"></div>
+                <div class="rightRope"></div>
+        </div>
+        <div class="plankReset">
+            <div class="texture2">
+            </div>
+        </div>
+        <div id="hReset">RESET DATA</div>
         </div>
     </div>
     <!-- Leaf background -->
