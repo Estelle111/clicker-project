@@ -20,6 +20,7 @@ body {
     }
 }
 #page{
+    overflow: auto;
     display:grid;
     grid-template-columns: 10% 20% 6% 28% 6% 20% 10%;
     width: 1600px;
@@ -88,6 +89,13 @@ body {
         grid-column : 4 / span 1;
         h1{
             color : yellow;
+            position: fixed;
+            top: 15vh;
+            width: 448px;
+        }
+        #hClick{
+            position: fixed;
+            top: 60vh;
         }
     }
     .rightColumn{
