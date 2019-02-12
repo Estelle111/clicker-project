@@ -22,9 +22,11 @@ body {
 #page{
     display:grid;
     grid-template-columns: 10% 20% 6% 28% 6% 20% 10%;
-    width: 1500px;
+    width: 1600px;
+    height: 800px;
     margin: auto;
     .leftColumn{
+        height: 800px;
         display: flex;
         flex-direction:column;
         grid-column : 2 / span 1;
@@ -92,7 +94,9 @@ body {
         display: flex;
         flex-direction:column;
         grid-column : 6 / span 1;
+        height: 800px;
         .autoplank{
+            height: 630px;
             .auto1Txt{
                 position : relative;
                 top:-550px;
@@ -119,7 +123,13 @@ body {
     z-index : 25;
     cursor: pointer;
     .rope{
-        height : 4vh;
+        height : 30px;
+        .leftRope{
+            height: 30px;
+        }
+        .rightRope{
+            height: 30px;
+        }
     }
     .plankReset{
         width : 150px;
@@ -146,17 +156,17 @@ body {
 }
 
 .rope{
-    height : 8vh;
+    height : 80px;
     display : flex;
     justify-content: space-around;
 }
 .leftRope {
-    height : 8vh;
+    height : 80px;
     width :3px;
     background-image: repeating-linear-gradient(-40deg,black 0%,black 5%,rgb(82, 49, 6)5%,rgb(160, 91, 13)10%)
 }
 .rightRope{
-    height : 8vh;
+    height : 80px;
     width : 3px;
     background-image: repeating-linear-gradient(-40deg,black 0%,black 5%,rgb(82, 49, 6)5%,rgb(156, 89, 12)10%)
 }
