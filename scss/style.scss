@@ -12,6 +12,7 @@ body {
     background: rgb(44,40,54);
     background: radial-gradient(circle, rgba(44,40,54,1) 5%, rgba(46,43,60,1) 25%, rgba(51,57,78,1) 70%, rgba(46,93,95,1) 86%);
     overflow: hidden;
+    min-width:1600px;
 }
     
 .hoverable{
@@ -101,7 +102,11 @@ body {
         }
         #hClick{
             position: fixed;
-            top: 60vh;
+            top: 50vh;
+            width: 200px;
+            height: 200px;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
     .rightColumn{
@@ -160,7 +165,7 @@ body {
     #hReset{
         position : absolute;
         top : 35px;
-        left : 20px;
+        left : 13px;
         z-index : 41;
         transform : rotate(-2deg) translate(8%, -5%);
        

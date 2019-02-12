@@ -61,7 +61,7 @@ window.onload = () => {
         })
 
         // Create event listener on click button
-        game.clickBtn.addEventListener('click', () => {
+        document.querySelector('#hClick').addEventListener('click', () => {
             game.increaseScore();
             game.updateAffichageScore(game.score);
             game.checkPrice();
