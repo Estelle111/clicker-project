@@ -155,7 +155,7 @@ table {
 
 .small {
   width: 100%;
-  height: 280px;
+  height: 270px;
 }
 
 .banana {
@@ -476,7 +476,6 @@ body {
 }
 
 #page {
-  overflow: auto;
   display: grid;
   grid-template-columns: 10% 20% 6% 28% 6% 20% 10%;
   width: 1600px;
@@ -490,12 +489,11 @@ body {
 }
 #page .leftColumn {
   height: 800px;
-  display: flex;
   flex-direction: column;
   grid-column: 2/span 1;
 }
 #page .leftColumn .infos {
-  height: 290px;
+  height: 280px;
 }
 #page .leftColumn .infos .infoTxt {
   position: relative;
@@ -582,7 +580,7 @@ body {
   height: 800px;
 }
 #page .rightColumn .autoplank {
-  height: 630px;
+  height: 640px;
 }
 #page .rightColumn .autoplank .auto1Txt {
   position: relative;
@@ -822,7 +820,7 @@ body {
 }
 #hScore {
   text-align: center;
-  font-size: 35px;
+  font-size: 34px;
   color: #eae4cc;
   font-family: "Westmeath", arial, sans-serif;
 }
