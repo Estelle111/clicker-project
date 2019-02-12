@@ -68,7 +68,7 @@ window.onload = () => {
         })
         // Create event listener on multiply button
         multObject = game.multiplier
-        document.querySelector('#bananaGrappe').addEventListener("click",() => {
+        document.querySelector('.bananaGrappe').addEventListener("click",() => {
             if (game.isBuyable(game.score,multObject.price) == true) { 
                 game.score = game.payForUpgrade(game.score,multObject.price)
                 multObject.multFlow()
@@ -111,6 +111,7 @@ window.onload = () => {
     function Game(score){
         // Properties of the Game - Add buttons from the DOM into props - Creates new objects
         this.clickBtn = document.querySelector('#hClick')
+        this.grappe = document.querySelector('.bananaGrappe')
         this.multBtn = document.querySelector('#hMultiplier')
         this.monkey = document.querySelector('.monkey');
         this.autoBtn = document.querySelector('#hAutoclick')
@@ -158,7 +159,7 @@ window.onload = () => {
         }
         // Cycle through each upgrade object and launch the btn_enabler_disabler method
         this.checkPrice = function(){
-            game.buttonEnableDisable(game.score,game.multiplier.price,game.multBtn)
+            game.buttonEnableDisable(game.score,game.multiplier.price,game.grappe)
             game.buttonEnableDisable(game.score,game.autoclick.price,game.monkey) 
         }
     }
@@ -193,7 +194,7 @@ window.onload = () => {
         }
         // Update autoclick display on index.html
         this.updateAffichageAutoclick = function () {
-            game.autoBtn.innerHTML = game.autoclick.bps.toFixed(0)+' bananas per second' + ' <br/> ' + game.autoclick.price.toFixed(0);
+            game.autoBtn.innerHTML = game.autoclick.bps.toFixed(0)+' BPS' + ' | ' + game.autoclick.price.toFixed(0);
         }
     }
 
