@@ -168,7 +168,6 @@ table {
   top: 14px;
   left: 5.6em;
   transform: scale(2);
-  cursor: pointer;
 }
 
 .banana:before {
@@ -205,7 +204,6 @@ table {
   top: -74px;
   left: 88px;
   transform: scale(2) rotate(-4deg);
-  cursor: pointer;
 }
 
 .bananaMult {
@@ -493,6 +491,7 @@ body {
 }
 #page .centralColumn #hClick {
   position: fixed;
+  cursor: pointer;
   top: 50vh;
   width: 200px;
   height: 200px;

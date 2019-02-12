@@ -61,14 +61,14 @@ window.onload = () => {
         })
 
         // Create event listener on click button
-        document.querySelector('#hClick').addEventListener('click', () => {
+        game.clickBtn.addEventListener('click', () => {
             game.increaseScore();
             game.updateAffichageScore(game.score);
             game.checkPrice();
         })
         // Create event listener on multiply button
         multObject = game.multiplier
-        document.querySelector('.bananaGrappe').addEventListener("click",() => {
+        game.grappe.addEventListener("click",() => {
             if (game.isBuyable(game.score,multObject.price) == true) { 
                 game.score = game.payForUpgrade(game.score,multObject.price)
                 multObject.multFlow()
