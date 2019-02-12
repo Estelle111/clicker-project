@@ -193,7 +193,7 @@ window.onload = () => {
         }
         // Update autoclick display on index.html
         this.updateAffichageAutoclick = function () {
-            game.autoBtn.innerHTML = game.autoclick.bps.toFixed(0)+' bananas per second' + ' | ' + game.autoclick.price.toFixed(0);
+            game.autoBtn.innerHTML = game.autoclick.bps.toFixed(0)+' bananas per second' + ' <br/> ' + game.autoclick.price.toFixed(0);
         }
     }
 
