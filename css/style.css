@@ -267,7 +267,7 @@ table {
   width: 95px;
   height: 100px;
   border-radius: 100%;
-  background: #9b7b53;
+  background: #a0522d;
   z-index: 100;
   top: 10%;
   left: 10%;
@@ -278,7 +278,7 @@ table {
   width: 35px;
   height: 35px;
   border-radius: 100%;
-  background: #9b7b53;
+  background: #a0522d;
   z-index: 98;
   top: 33%;
 }
@@ -288,7 +288,7 @@ table {
   width: 35px;
   height: 35px;
   border-radius: 100%;
-  background: #9b7b53;
+  background: #a0522d;
   z-index: 98;
   top: 33%;
   left: 69%;
@@ -442,23 +442,6 @@ table {
   transform: scale(2) rotate(-4deg);
 }
 
-<<<<<<< HEAD
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 .monkey2 {
   position: relative;
   margin: auto;
@@ -844,8 +827,6 @@ table {
   transform: rotate(180deg);
 }
 
-=======
->>>>>>> estel
 html {
   min-height: 100%;
 }
