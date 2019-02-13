@@ -21,8 +21,7 @@ window.onload = () => {
         game.autoBtn2 = getSave.AutoDisplayBps2;
         game.multiplier.updateAffichageMultiple();
         game.autoclick.updateAffichageAutoclick();
-        game.updateAffichageBps(game.autoclick.bps);
-        game.updateAffichageBps(game.autoclick2.bps);
+        game.updateAffichageBps(game.autoclick.bps,game.autoclick2.bps);
 
     } else {
         // If nothing in memory, start game with score= 0
@@ -93,7 +92,7 @@ window.onload = () => {
                 autoObject.autoFlow();
                 game.checkPrice();
                 game.updateAffichageScore(game.score);
-                game.updateAffichageBps(autoObject.bps);
+                game.updateAffichageBps(autoObject.bps,autoObject2.bps);
             }
         })
         // Create event listener on autoclick2 button
@@ -104,7 +103,7 @@ window.onload = () => {
                 autoObject2.autoFlow();
                 game.checkPrice();
                 game.updateAffichageScore(game.score);
-                game.updateAffichageBps(autoObject2.bps);
+                game.updateAffichageBps(autoObject.bps,autoObject2.bps);
             }
         })
 
@@ -158,8 +157,9 @@ window.onload = () => {
             document.querySelector('#hScore').innerHTML = `${score.toFixed(0)} banana(s)`
         }
         // Update bps display on index.html
-        this.updateAffichageBps = function (bps) {
-            document.querySelector('#hPerSecond').innerHTML = `${bps} banana(s)/second`
+        this.updateAffichageBps = function (bps,bps2) {
+            var totBps = bps+bps2
+            document.querySelector('#hPerSecond').innerHTML = `${totBps} banana(s)/second`
         }
         // Increase score by multiplier
         this.increaseScore = function(){
@@ -185,6 +185,9 @@ window.onload = () => {
             game.buttonEnableDisable(game.score,game.autoclick.price,game.monkey) 
             game.buttonEnableDisable(game.score,game.autoclick2.price,game.monkey2)
         }
+        this.updateAffichageAutoclick = function () {
+            this.displayBps.innerHTML = this.bps.toFixed(0)+' BPS' + ' | ' + this.price.toFixed(0);
+    }
     }
 
     function Multiple(price, level, increase){
