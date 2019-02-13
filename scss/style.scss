@@ -128,7 +128,7 @@ body {
             height: 640px;
             .auto1Txt{
                 position : relative;
-                top:-570px;
+                top:-590px;
                 left: 6px;
                 display: flex;
                 flex-direction: column;
@@ -137,12 +137,12 @@ body {
                 justify-content: space-around;
                 .monkey{cursor:pointer}
                 #hAutoclick{
-                    margin-top : 2vh;
+                    margin-top : 1vh;
                 }
             }
             .auto2Txt{
                 position : relative;
-                top:-480px;
+                top:-500px;
                 left: 6px;
                 display: flex;
                 flex-direction: column;
@@ -151,7 +151,7 @@ body {
                 justify-content: space-around;
                 .monkey2{cursor:pointer}
                 #hAutoclick2{
-                    margin-top : 4vh;
+                    margin-top : 3vh;
                 }
             }
         }

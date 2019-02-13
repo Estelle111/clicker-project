@@ -954,7 +954,7 @@ body {
 }
 #page .rightColumn .autoplank .auto1Txt {
   position: relative;
-  top: -570px;
+  top: -590px;
   left: 6px;
   display: flex;
   flex-direction: column;
@@ -966,11 +966,11 @@ body {
   cursor: pointer;
 }
 #page .rightColumn .autoplank .auto1Txt #hAutoclick {
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 #page .rightColumn .autoplank .auto2Txt {
   position: relative;
-  top: -480px;
+  top: -500px;
   left: 6px;
   display: flex;
   flex-direction: column;
@@ -982,7 +982,7 @@ body {
   cursor: pointer;
 }
 #page .rightColumn .autoplank .auto2Txt #hAutoclick2 {
-  margin-top: 4vh;
+  margin-top: 3vh;
 }
 
 .reset {
