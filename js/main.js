@@ -4,7 +4,7 @@ window.onload = () => {
     if (localStorage.getItem('saveData') !== null) {
         // Creation and Init of game
         game = new Game(0);
-        // Getting memory then setting it on live memory
+        // Getting memory then setting it on live data's memory
         var retrieveData = localStorage.getItem('saveData');
         var getSave = JSON.parse(retrieveData);     
         game.score = getSave.Score;
@@ -26,7 +26,7 @@ window.onload = () => {
         game.updateAffichageBps(game.autoclick.bps,game.autoclick2.bps);
 
     } else {
-        // If nothing in memory, start game with score= 0
+        // If nothing in memory, start game with score put to 0
         game = new Game(0);        
     }
 
@@ -34,7 +34,7 @@ window.onload = () => {
 
     // Main Function 
     function gameFlow(){
-        // Displays informations in the buttons when the game starts
+        // Displays informations in the buttons when the game start
         game.checkPrice();
         game.updateAffichageScore(game.score);
         game.multiplier.updateAffichageMultiple();
@@ -70,13 +70,14 @@ window.onload = () => {
             }else{}
         })
 
-        // Create event listener on click button
+        // Create event listener on click button (the banana)
         game.clickBtn.addEventListener('click', () => {
             game.increaseScore();
             game.updateAffichageScore(game.score);
             game.checkPrice();
         })
-        // Create event listener on multiply button
+
+        // Create event listener on multiply button (the pack of banana)
         multObject = game.multiplier
         game.grappe.addEventListener("click",() => {
             if (game.isBuyable(game.score,multObject.price) == true) { 
@@ -86,6 +87,7 @@ window.onload = () => {
                 game.updateAffichageScore(game.score);
             }
         })
+
         // Create event listener on autoclick button
         autoObject = game.autoclick
         game.monkey.addEventListener("click",() => {
@@ -97,6 +99,7 @@ window.onload = () => {
                 game.updateAffichageBps(autoObject.bps,autoObject2.bps);
             }
         })
+
         // Create event listener on autoclick2 button
         autoObject2 = game.autoclick2
         game.monkey2.addEventListener("click",() => {
@@ -118,8 +121,6 @@ window.onload = () => {
         )
         game.bonusBtn.addEventListener("click",() => {
             bonusObject.hideBonus()
-            // multObject.updateAffichageMultiple()
-            console.log(multObject.increase)
             bonusObject.defineCoord()
             bonusObject.evolBonusIncrease()
             setTimeout(() => {
@@ -156,11 +157,12 @@ window.onload = () => {
                 return true;
             }
         }
-        // Update score display on index.html
+
+        // Update score display 
         this.updateAffichageScore = function (score) {
             document.querySelector('#hScore').innerHTML = `${score.toFixed(0)} banana(s)`
         }
-        // Update bps display on index.html
+        // Update bps display 
         this.updateAffichageBps = function (bps,bps2) {
             var totBps = bps+bps2
             document.querySelector('#hPerSecond').innerHTML = `${totBps} banana(s)/second`
@@ -173,16 +175,17 @@ window.onload = () => {
         this.payForUpgrade = function(score,price){      
             return (score - price)      
         }
-        // Deactivate buttons if the user has not enough points to buy the upgrade
+        // Deactivate buttons if the user has not enough to buy the upgrade
         this.buttonEnableDisable = function(score, price,btnType){
-        if (game.isBuyable(score,price)){
-            btnType.disabled=false;
-            btnType.classList.remove('grayOut')
-        }else{
-            btnType.disabled = true;
-            btnType.classList.add('grayOut')
+            if (game.isBuyable(score,price)){
+                btnType.disabled=false;
+                btnType.classList.remove('grayOut')
+            }else{
+                btnType.disabled = true;
+                btnType.classList.add('grayOut')
+            }
         }
-        }
+
         // Cycle through each upgrade object and launch the btn_enabler_disabler method
         this.checkPrice = function(){
             game.buttonEnableDisable(game.score,game.multiplier.price,game.grappe)
@@ -205,7 +208,7 @@ window.onload = () => {
             this.increase = this.increase+1;
             this.updateAffichageMultiple()
         }
-        // Update multiple display on index.html
+        // Update multiple display 
         this.updateAffichageMultiple = function () {
             game.multBtn.innerHTML = 'X' + this.increase.toFixed(0) + ' | ' + this.price.toFixed(0);
         }
@@ -224,7 +227,7 @@ window.onload = () => {
             this.bps = this.bps+this.evol;
             this.updateAffichageAutoclick()
         }
-        // Update autoclick display on index.html
+        // Update autoclick display 
         this.updateAffichageAutoclick = function () {
             this.displayBps.innerHTML = '+' + this.evol + ' BPS </br>' + this.bps.toFixed(0)+' BPS' + ' | ' + this.price.toFixed(0) + '<img src="./favicon.ico" width="22px"></img>';
             // this.displayBps.innerHTML = '+' + this.evol + ' BPS' + ' | ' + this.price.toFixed(0);
@@ -241,7 +244,7 @@ window.onload = () => {
             var randomY = Math.floor(Math.random()*y);
             return [randomX,randomY]
         }
-
+        // Part of code for bonus button random location
         this.defineCoord = function() {
             this.btnBonus = document.querySelector('#hBonus')
             this.xPos = this.getRandomPosition()[0]
@@ -249,18 +252,19 @@ window.onload = () => {
             this.btnBonus.style.left = this.xPos + 'px'
             this.btnBonus.style.top = this.yPos + 'px'
         }
+        
+        // Randomize function ranging from 30 to 120 seconds
         this.randomTime = function() {
             totalRandom = 30000 + Math.floor((Math.random() * 90000) + 1)
             return totalRandom
         }
-        // Function used to increase the score of the multiplier then decrease after X second
+        
+        // Function used to increase the score of the multiplier then decrease after 5 second
         this.evolBonusIncrease = function () {
             multObject.increase *= 5
             game.multiplier.updateAffichageMultiple()
-            console.log(multObject.increase)
             setTimeout(() => {
                 multObject.increase /= 5
-                console.log(multObject.increase)
                 game.multiplier.updateAffichageMultiple()
                 ;},
                 5000
@@ -275,7 +279,7 @@ window.onload = () => {
             game.bonusBtn.style.display = "none"
         }
     }
-
+    // Function made to save every data tied to the game
     function saveGameData(){
         var saveData = {
             'Score':game.score,
@@ -293,8 +297,7 @@ window.onload = () => {
             'AutoEvol' :game.autoclick.evol,
             'AutoEvol2' :game.autoclick2.evol
         }
-        // -> Storage
+        // Save to Storage
         localStorage.setItem('saveData', JSON.stringify(saveData));
-        console.log(saveData.Score);
     }
 }
