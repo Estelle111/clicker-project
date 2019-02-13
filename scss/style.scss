@@ -16,12 +16,6 @@ body {
     overflow: hidden;
     min-width:1600px;
 }
-    
-.hoverable{
-    &:hover{
-        // transform:scale(1.1);
-    }
-}
 #page{
     // overflow: auto;
     @media only screen and (max-height: 850px){
@@ -102,6 +96,7 @@ body {
             top: 15vh;
             width: 448px;
         }
+        //banane
         #hClick{
             position: fixed;
             cursor: pointer;
@@ -110,14 +105,20 @@ body {
             height: 200px;
             margin-left : 124px;
         }
+        //banane bonus
         #hBonus{
+            display: none;
             position: fixed;
             cursor: pointer;
-            top: 51vh;
+            top: -1000px;
+            z-index: 30;
             width: 200px;
             height: 200px;
-            margin-left : 163px;
+            animation: spin 0.5s linear infinite;
         }
+        //animation banane bonus
+        @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } };
+
     }
     .rightColumn{
         display: flex;
@@ -128,7 +129,8 @@ body {
             height: 640px;
             .auto1Txt{
                 position : relative;
-                top:-550px;
+                top:-590px;
+                left: 6px;
                 display: flex;
                 flex-direction: column;
                 z-index : 4;
@@ -136,7 +138,21 @@ body {
                 justify-content: space-around;
                 .monkey{cursor:pointer}
                 #hAutoclick{
-                    margin-top : 2vh;
+                    margin-top : 1vh;
+                }
+            }
+            .auto2Txt{
+                position : relative;
+                top:-500px;
+                left: 6px;
+                display: flex;
+                flex-direction: column;
+                z-index : 4;
+                text-align: center;
+                justify-content: space-around;
+                .monkey2{cursor:pointer}
+                #hAutoclick2{
+                    margin-top : 3vh;
                 }
             }
         }
@@ -405,6 +421,14 @@ body {
         }
 
     #hAutoclick {
+            text-align: center;
+            color : #eae4cc ; 
+            font-size : 29px ; 
+            font-family: "Westmeath2",arial,sans-serif;
+            // text-shadow: 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61;
+        
+        }
+        #hAutoclick2 {
             text-align: center;
             color : #eae4cc ; 
             font-size : 29px ; 
