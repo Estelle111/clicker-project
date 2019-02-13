@@ -96,6 +96,7 @@ body {
             top: 15vh;
             width: 448px;
         }
+        //banane
         #hClick{
             position: fixed;
             cursor: pointer;
@@ -104,6 +105,7 @@ body {
             height: 200px;
             margin-left : 124px;
         }
+        //banane bonus
         #hBonus{
             position: fixed;
             cursor: pointer;
@@ -111,7 +113,11 @@ body {
             width: 200px;
             height: 200px;
             margin-left : 163px;
+            animation: spin 0.5s linear infinite;
         }
+        //animation banane bonus
+        @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } };
+
     }
     .rightColumn{
         display: flex;

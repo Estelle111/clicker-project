@@ -2,23 +2,22 @@
     width:6em;
     height: 6em;
     background-color: transparent;
-    box-shadow: -1.1em 1.1em 0 0 #ad4c38;
+    box-shadow: -1.1em 1.1em 0 0 #CC0000;
     border-radius: 50%;
     position: relative;
     top: 16px;
     left: 89px;
     transform: scale(2);
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
     }
+
+
   
 .bananaBonus:before {
     content:"";
     width: 0.3em;
     height: 0.3em;
     transform: rotate(45deg);
-    background-color: #d95f47;
+    background-color: #b70000;
     position: absolute;
     top: 5.2em;
     left: 4.5em;
@@ -30,7 +29,7 @@
     width: 0.4em;
     height: 0.8em;
     transform: rotate(31deg);
-    background-color: #e89f90;
+    background-color: #b70000;
     position: absolute;
     top:1.1em;
     left:0.2em;
@@ -41,24 +40,10 @@
     width: 5.5em;
     height: 5.8em;
     background-color: transparent;
-    box-shadow: -0.4em 0.4em 0 0 #dc6f59;
+    box-shadow: -0.4em 0.4em 0 0 #e60000;
     border-radius: 50%;
     position: relative;
     top: -75px;
     left: 89px;
     transform: scale(2) rotate(-4deg);
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
 }
-
-// @keyframes spin { 
-//     from { 
-//         transform: rotate(0deg); 
-//     } to { 
-//         transform: rotate(360deg); 
-//     }
-// }
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
