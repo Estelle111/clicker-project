@@ -1,7 +1,25 @@
 # Clicker Project
 Welcome to our Clicker project, a game based on Cookie clicker.
 
-[Workflow](##workflow)
+## Summary
+
+- [Guide line](#guide-line)
+  
+- [Tasks assignment](#tasks-assignment)
+  
+- [Built with](#built-with)
+  
+- [Workflow](#workflow)
+  
+- [Sprints](#sprints)
+  
+- [Challenges](#challenges)
+  
+- [Known bugs](#known-bugs)
+  
+- [Commentary](#commentary)
+  
+- [Authors](#authors)
 
 ## Guide line
 * Using 
@@ -48,19 +66,23 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 * CSS
 * Javascript
 
-##Workflow
+## Workflow
 
 - We worked each of us on a different branche called by our respective names.
 - At each new feature, or major update done, we merged our personal branche to a common one, called 'experimental' (usualy called 'development'). The conflicts had to be resolved at that time.
 - Finally, the corrector checked the code, and merged 'experimental' on the master branch.
-</br>
-  * master \_\_\_\> experimental \_\_\_\> alex
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|\_\_\_\> mat
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|\_\_\_\> max
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|\_\_\_\> estel
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|\_\_\_\> magid
 
-## Sprint
+<br />
+
+    * master 
+      * experimental 
+        * alex
+        * mat
+        * max
+        * estel
+        * magid
+
+## Sprints
 * **Sprint 1**
 	* Organization of the planning.
 	* Distribution of roles.
@@ -113,7 +135,11 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 
 ## Challenges
 
-## Known Bugs
+* **Work with objects** - This has been a first time for some of us.
+
+* **The NO-IMAGE rule** - It has been a true challenge To achieve our initial visual objective, we attempted to create visual elements with HTML and CSS.  
+
+* **Work in a group !** - It required a lot of communication and organization. We also decided to dispatch the tasks as equally as possible in order to let everyone progress and not lean on each person's own proficiency.
 
 ## Commentary
 If you have any comment, recommendation or advice, please feel free to contact us.
