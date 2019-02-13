@@ -17,7 +17,7 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 
 * To link scss to css use the link **sh linkScss.sh** 
 
-* 2 meetings / day
+* 3 meetings / day
 
 ## Tasks assignment
 **Scrum master** : **Estelle**
@@ -45,6 +45,14 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 * SCSS
 * CSS
 * Javascript
+
+## Workflow
+
+## Sprint
+
+## Challenges
+
+## Known Bugs
 
 ## Commentary
 If you have any comment, recommendation or advice, please feel free to contact us.
