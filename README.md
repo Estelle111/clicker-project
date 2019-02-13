@@ -49,6 +49,43 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 ## Workflow
 
 ## Sprint
+* **Sprint 1**
+	* Organization of the planning.
+	* Distribution of roles.
+	* Initialization of the repo on github.
+	* Basic structure of html, scss and javascript files.
+	* JS preparation: 
+		* game object constructor and object. 
+		* score and multiply properties.
+* **Sprint 2**
+	* No credit : When you click the button, increase the score property, and then display that score in the div display.
+	* Meter display : Display the multiplier counter inside the button.
+	* Price display and multiplier : Display the multiplier counter inside the button. 
+	* Price evolution and multiplier : The more you buy multipliers, the more expensive they are.
+	* Increase of the score compared to the number of clicks.
+	* Prepare and use of the multiplier : Add a button whose identifier is multiply. Create a click counter on this button.The score increase by clicking the button integrates the multiplier value.
+	* Purchase of banana (decrease in score)
+	* Deduction of the score according to the purchase of bananas
+
+* **Sprint 3**
+	* Autoclick : As soon as you have a score of 20, one click is done automatically every second.
+	* Purchase autoclick : After a score of 20, the autoclick is no longer automatic, you have to buy it.
+	* Disable buttons when there are not enough bananas to buy them.
+	* Bonus
+	* Random time prototype on bonus
+
+* **Sprint 4**
+	* 
+	* 
+	* 
+* **Sprint 5**
+	* 
+	* 
+	* 
+* **Sprint 6**
+	* 
+	* 
+	* 
 
 ## Challenges
 
