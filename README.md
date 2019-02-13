@@ -30,7 +30,7 @@ Welcome to our Clicker project, **Jungle Banana Jungle**, a game based on Cookie
 
 * merge request only on **experimental** branch
 
-* Always work with the **[index-list](https://github.com/Estelle111/clicker-project/blob/experimental/index-list.md)**
+* Always work with the **[Index-list](./index-list)**
   For each ID, class, function, variable,... creation => add it on INDEX-LIST
 
 * Watch the [todo list](https://github.com/Estelle111/clicker-project/projects/1) regularly and modify it if necessary
@@ -43,7 +43,7 @@ Welcome to our Clicker project, **Jungle Banana Jungle**, a game based on Cookie
 **Scrum master** : **Estelle**
 * communication management within the team
 * smooth project and timing
-* README.md
+* Readme.md
 
 **Product checker** : **Maxime**
 * features pusher
@@ -57,7 +57,7 @@ Welcome to our Clicker project, **Jungle Banana Jungle**, a game based on Cookie
 * try to crack the code to check if everything is holding
 
 **Indexer** : **Maxime**
-* index-list creation and management
+* [Index-list](./index-list) creation and management
  
 
 ## Built With
@@ -131,7 +131,7 @@ Welcome to our Clicker project, **Jungle Banana Jungle**, a game based on Cookie
 	* Progress Curve
 	* Debug JS
 	* Correcting the code and adding comments
-	* Updated Readme, Index-list and Bug-list
+	* Updated Readme, [Index-list](./index-list) and [Bug-list](./buglist.md).
 
 ## Challenges
 
