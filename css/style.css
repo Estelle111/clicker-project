@@ -403,7 +403,7 @@ table {
   position: relative;
   top: 16px;
   left: 89px;
-  transform: scale(2);
+  transform: scale(1.5);
 }
 
 .bananaBonus:before {
@@ -439,7 +439,7 @@ table {
   position: relative;
   top: -75px;
   left: 89px;
-  transform: scale(2) rotate(-4deg);
+  transform: scale(1.5) rotate(-4deg);
 }
 
 .monkey2 {
