@@ -3,7 +3,7 @@
 @import 'banana.scss';
 @import 'bananaMult.scss';
 @import 'monkey.scss';
-
+@import 'bonus.scss';
 html {
     min-height: 100%;
 }
@@ -21,7 +21,7 @@ body {
     }
 }
 #page{
-    overflow: auto;
+    // overflow: auto;
     @media only screen and (max-height: 850px){
         overflow-y: scroll;
     }
@@ -32,11 +32,11 @@ body {
     margin: auto;
     .leftColumn{
         height: 800px;
-        display: flex;
+        // display: flex;
         flex-direction:column;
         grid-column : 2 / span 1;
         .infos{
-            height: 290px;
+            height: 280px;
             .infoTxt{
                 position : relative;
                 top : -190px;
@@ -102,11 +102,19 @@ body {
         }
         #hClick{
             position: fixed;
-            top: 50vh;
+            cursor: pointer;
+            top: 55vh; 
             width: 200px;
             height: 200px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-left : 124px;
+        }
+        #hBonus{
+            position: fixed;
+            cursor: pointer;
+            top: 51vh;
+            width: 200px;
+            height: 200px;
+            margin-left : 163px;
         }
     }
     .rightColumn{
@@ -115,7 +123,7 @@ body {
         grid-column : 6 / span 1;
         height: 800px;
         .autoplank{
-            height: 630px;
+            height: 640px;
             .auto1Txt{
                 position : relative;
                 top:-550px;
@@ -127,7 +135,6 @@ body {
                 .monkey{cursor:pointer}
                 #hAutoclick{
                     margin-top : 2vh;
-                   
                 }
             }
         }
@@ -350,7 +357,7 @@ body {
 
         #hScore {
             text-align: center;
-            font-size : 35px ; 
+            font-size : 34px ; 
             color : #eae4cc ; 
             font-family: "Westmeath",arial,sans-serif;
             // text-shadow: 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61;
