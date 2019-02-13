@@ -226,7 +226,8 @@ window.onload = () => {
         }
         // Update autoclick display on index.html
         this.updateAffichageAutoclick = function () {
-            this.displayBps.innerHTML = this.bps.toFixed(0)+' BPS' + ' | ' + this.price.toFixed(0);
+            this.displayBps.innerHTML = '+' + this.evol + ' BPS </br>' + this.bps.toFixed(0)+' BPS' + ' | ' + this.price.toFixed(0);
+            // this.displayBps.innerHTML = '+' + this.evol + ' BPS' + ' | ' + this.price.toFixed(0);
         }
     }
 

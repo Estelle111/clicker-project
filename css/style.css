@@ -267,7 +267,7 @@ table {
   width: 95px;
   height: 100px;
   border-radius: 100%;
-  background: #9b7b53;
+  background: #a0522d;
   z-index: 100;
   top: 10%;
   left: 10%;
@@ -278,7 +278,7 @@ table {
   width: 35px;
   height: 35px;
   border-radius: 100%;
-  background: #9b7b53;
+  background: #a0522d;
   z-index: 98;
   top: 33%;
 }
@@ -288,7 +288,7 @@ table {
   width: 35px;
   height: 35px;
   border-radius: 100%;
-  background: #9b7b53;
+  background: #a0522d;
   z-index: 98;
   top: 33%;
   left: 69%;
@@ -300,7 +300,7 @@ table {
   height: 27.5px;
   border-radius: 100%;
   z-index: 99;
-  background: #fff6e0;
+  background: #f4a460;
   top: 10%;
   left: 5%;
 }
@@ -311,7 +311,7 @@ table {
   height: 27.5px;
   border-radius: 100%;
   z-index: 99;
-  background: #fff6e0;
+  background: #f4a460;
   top: 10%;
   left: 15%;
 }
@@ -322,7 +322,7 @@ table {
   height: 60px;
   border-radius: 50%;
   z-index: 101;
-  background: #fff6e0;
+  background: #f4a460;
   top: 42%;
   left: 14%;
 }
@@ -333,7 +333,7 @@ table {
   height: 75px;
   border-radius: 100%;
   z-index: 101;
-  background: #fff6e0;
+  background: #f4a460;
   top: 25%;
   left: 20%;
 }
@@ -344,7 +344,7 @@ table {
   height: 7.5px;
   border-radius: 100%;
   z-index: 102;
-  background: #543f22;
+  background: #3d2e19;
   top: 30%;
   left: 20%;
 }
@@ -355,7 +355,7 @@ table {
   height: 7.5px;
   border-radius: 100%;
   z-index: 102;
-  background: #543f22;
+  background: #3d2e19;
   top: 30%;
   left: 70%;
 }
@@ -366,7 +366,7 @@ table {
   height: 1px;
   border-radius: 100%;
   z-index: 102;
-  background: #543f22;
+  background: #3d2e19;
   top: 55%;
   left: 38%;
 }
@@ -377,7 +377,7 @@ table {
   height: 1px;
   border-radius: 100%;
   z-index: 102;
-  background: #543f22;
+  background: #3d2e19;
   top: 55%;
   left: 52%;
 }
@@ -389,7 +389,7 @@ table {
   z-index: 102;
   top: 65%;
   left: 17%;
-  border: solid 2px #543f22;
+  border: solid 2px #3d2e19;
   border-color: transparent transparent #543f22 transparent;
   border-radius: 100%;
 }
@@ -954,7 +954,8 @@ body {
 }
 #page .rightColumn .autoplank .auto1Txt {
   position: relative;
-  top: -550px;
+  top: -590px;
+  left: 6px;
   display: flex;
   flex-direction: column;
   z-index: 4;
@@ -965,11 +966,12 @@ body {
   cursor: pointer;
 }
 #page .rightColumn .autoplank .auto1Txt #hAutoclick {
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 #page .rightColumn .autoplank .auto2Txt {
   position: relative;
   top: -500px;
+  left: 6px;
   display: flex;
   flex-direction: column;
   z-index: 4;
@@ -980,7 +982,7 @@ body {
   cursor: pointer;
 }
 #page .rightColumn .autoplank .auto2Txt #hAutoclick2 {
-  margin-top: 2vh;
+  margin-top: 3vh;
 }
 
 .reset {
