@@ -453,6 +453,87 @@ table {
   top: 8%;
 }
 
+@keyframes moveEarLeft {
+  0% {
+    left: -20%;
+    top: 20%;
+  }
+  25% {
+    left: -20%;
+    top: 18%;
+  }
+  50% {
+    left: -20%;
+    top: 20%;
+  }
+  75% {
+    left: -20%;
+    top: 18%;
+  }
+  100% {
+    left: -20%;
+    top: 20%;
+  }
+}
+@keyframes moveInnerEarLeft {
+  0% {
+    left: -20%;
+    top: 36%;
+  }
+  25% {
+    left: -20%;
+    top: 34%;
+  }
+  50% {
+    left: -20%;
+    top: 36%;
+  }
+  75% {
+    left: -20%;
+    top: 34%;
+  }
+  100% {
+    left: -20%;
+    top: 36%;
+  }
+}
+@keyframes moveEarRight {
+  0% {
+    right: -20%;
+    top: 20%;
+  }
+  25% {
+    right: -20%;
+    top: 18%;
+  }
+  50% {
+    right: -20%;
+    top: 20%;
+  }
+  75% {
+    right: -20%;
+    top: 18%;
+  }
+  100% {
+    right: -20%;
+    top: 20%;
+  }
+}
+@keyframes blink {
+  0% {
+    background: #a0522d;
+    border-bottom: #000;
+  }
+  50% {
+    background: transparent;
+    border-bottom: #000;
+  }
+  100% {
+    background: #a0522d;
+    border-bottom: #000;
+  }
+}
+
 .head2 {
   position: absolute;
   top: 8%;
@@ -538,28 +619,6 @@ table {
   animation-duration: 5s;
 }
 
-@keyframes moveEarLeft {
-  0% {
-    left: -20%;
-    top: 20%;
-  }
-  25% {
-    left: -20%;
-    top: 18%;
-  }
-  50% {
-    left: -20%;
-    top: 20%;
-  }
-  75% {
-    left: -20%;
-    top: 18%;
-  }
-  100% {
-    left: -20%;
-    top: 20%;
-  }
-}
 .ear-inner-left {
   position: absolute;
   width: 35%;
@@ -574,28 +633,6 @@ table {
   animation-duration: 5s;
 }
 
-@keyframes moveInnerEarLeft {
-  0% {
-    left: -20%;
-    top: 36%;
-  }
-  25% {
-    left: -20%;
-    top: 34%;
-  }
-  50% {
-    left: -20%;
-    top: 36%;
-  }
-  75% {
-    left: -20%;
-    top: 34%;
-  }
-  100% {
-    left: -20%;
-    top: 36%;
-  }
-}
 .ear-right {
   position: absolute;
   width: 50%;
@@ -613,28 +650,6 @@ table {
   animation-duration: 5s;
 }
 
-@keyframes moveEarRight {
-  0% {
-    right: -20%;
-    top: 20%;
-  }
-  25% {
-    right: -20%;
-    top: 18%;
-  }
-  50% {
-    right: -20%;
-    top: 20%;
-  }
-  75% {
-    right: -20%;
-    top: 18%;
-  }
-  100% {
-    right: -20%;
-    top: 20%;
-  }
-}
 .ear-inner-right {
   position: absolute;
   width: 85%;
@@ -685,20 +700,6 @@ table {
   animation-delay: 6s;
 }
 
-@keyframes blink {
-  0% {
-    background: #a0522d;
-    border-bottom: #000;
-  }
-  50% {
-    background: transparent;
-    border-bottom: #000;
-  }
-  100% {
-    background: #a0522d;
-    border-bottom: #000;
-  }
-}
 .closedEyelid {
   position: absolute;
   top: 50%;

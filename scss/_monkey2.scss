@@ -8,6 +8,88 @@
     height: 150px;
     top: 8%;
 }
+.monkey2:hover {
+    @keyframes moveEarLeft {
+        0% {
+            left: -20%;
+            top: 20%;
+        }
+        25% {
+            left: -20%;
+            top: 18%;
+        }
+        50% {
+            left: -20%;
+            top: 20%;
+        }
+        75% {
+            left: -20%;
+            top: 18%;
+        }
+        100% {
+            left: -20%;
+            top: 20%;
+        }
+    }
+    @keyframes moveInnerEarLeft {
+        0% {
+            left: -20%;
+            top: 36%;
+        }
+        25% {
+            left: -20%;
+            top: 34%;
+        }
+        50% {
+            left: -20%;
+            top: 36%;
+        }
+        75% {
+            left: -20%;
+            top: 34%;
+        }
+        100% {
+            left: -20%;
+            top: 36%;
+        }
+    }
+    @keyframes moveEarRight {
+        0% {
+            right: -20%;
+            top: 20%;
+        }
+        25% {
+            right: -20%;
+        top: 18%;
+        }
+        50% {
+            right: -20%;
+        top: 20%;
+        }
+        75% {
+            right: -20%;
+            top: 18%;
+        }
+        100% {
+            right: -20%;
+        top: 20%;
+        }
+    }
+    @keyframes blink {
+        0%{
+            background: #a0522d;
+            border-bottom: #000;
+        }
+        50%{
+            background: transparent;
+            border-bottom: #000;
+        }
+        100%{
+            background: #a0522d;
+            border-bottom: #000;
+        }
+    }
+}
 
 .head2 {
     position: absolute;
@@ -89,29 +171,6 @@
     animation-duration: 5s;
 }
 
-@keyframes moveEarLeft {
-    0% {
-        left: -20%;
-        top: 20%;
-    }
-    25% {
-        left: -20%;
-        top: 18%;
-    }
-    50% {
-        left: -20%;
-        top: 20%;
-    }
-    75% {
-        left: -20%;
-        top: 18%;
-    }
-    100% {
-        left: -20%;
-        top: 20%;
-    }
-}
-
 .ear-inner-left {
     position: absolute;
     width: 35%;
@@ -124,29 +183,6 @@
     transform: rotate(70deg);
     animation-name: moveInnerEarLeft;
     animation-duration: 5s;
-}
-
-@keyframes moveInnerEarLeft {
-    0% {
-        left: -20%;
-        top: 36%;
-    }
-    25% {
-        left: -20%;
-        top: 34%;
-    }
-    50% {
-        left: -20%;
-        top: 36%;
-    }
-    75% {
-        left: -20%;
-        top: 34%;
-    }
-    100% {
-        left: -20%;
-        top: 36%;
-    }
 }
 
 .ear-right {
@@ -164,29 +200,6 @@
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
     animation-name: moveEarRight;
     animation-duration: 5s;
-}
-
-@keyframes moveEarRight {
-    0% {
-        right: -20%;
-        top: 20%;
-    }
-    25% {
-        right: -20%;
-    top: 18%;
-    }
-    50% {
-        right: -20%;
-    top: 20%;
-    }
-    75% {
-        right: -20%;
-        top: 18%;
-    }
-    100% {
-        right: -20%;
-    top: 20%;
-    }
 }
 
 .ear-inner-right {
@@ -237,21 +250,6 @@
     animation-name: blink;
     animation-duration: 2s;
     animation-delay: 6s;
-}
-
-@keyframes blink {
-    0%{
-        background: #a0522d;
-        border-bottom: #000;
-    }
-    50%{
-        background: transparent;
-        border-bottom: #000;
-    }
-    100%{
-        background: #a0522d;
-        border-bottom: #000;
-    }
 }
 
 .closedEyelid {
