@@ -132,6 +132,7 @@ window.onload = () => {
 
     function Game(score){
         // Properties of the Game - Add buttons from the DOM into props - Creates new objects
+        this.score = score
         this.clickBtn = document.querySelector('#hClick')
         this.grappe = document.querySelector('.bananaGrappe')
         this.multBtn = document.querySelector('#hMultiplier')
@@ -141,7 +142,6 @@ window.onload = () => {
         this.autoBtn2 = document.querySelector('#hAutoclick2')
         this.bonusBtn = document.querySelector('#hBonus')
         this.resetBtn = document.querySelector('#hReset')
-        this.score = score
         this.multiplier = new Multiple(50,1,1)
         this.autoclick = new Autoclick(20,1,0,this.autoBtn,1)
         this.autoclick2 = new Autoclick(200,1,0,this.autoBtn2,10)
