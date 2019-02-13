@@ -15,8 +15,6 @@ Welcome to our Clicker project, **Jungle Banana Jungle**, a game based on Cookie
   
 - [Challenges](#challenges)
   
-- [Known bugs](#known-bugs)
-  
 - [Commentary](#commentary)
   
 - [Authors](#authors)
