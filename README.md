@@ -1,7 +1,25 @@
 # Clicker Project
 Welcome to our Clicker project, a game based on Cookie clicker.
 
-[Workflow](##workflow)
+## Summary
+
+- [Guide line](#guide-line)
+  
+- [Tasks assignment](#tasks-assignment)
+  
+- [Built with](#built-with)
+  
+- [Workflow](#workflow)
+  
+- [Sprints](#sprints)
+  
+- [Challenges](#challenges)
+  
+- [Known bugs](#known-bugs)
+  
+- [Commentary](#commentary)
+  
+- [Authors](#authors)
 
 ## Guide line
 * Using 
@@ -48,7 +66,7 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 * CSS
 * Javascript
 
-##Workflow
+## Workflow
 
 - We worked each of us on a different branche called by our respective names.
 - At each new feature, or major update done, we merged our personal branche to a common one, called 'experimental' (usualy called 'development'). The conflicts had to be resolved at that time.
@@ -60,11 +78,11 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|\_\_\_\> estel
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|\_\_\_\> magid
 
-## Sprint
+## Sprints
 
 ## Challenges
 
-## Known Bugs
+## Known bugs
 
 ## Commentary
 If you have any comment, recommendation or advice, please feel free to contact us.
