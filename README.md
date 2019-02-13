@@ -72,13 +72,13 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 - At each new feature, or major update done, we merged our personal branche to a common one, called 'experimental' (usualy called 'development'). The conflicts had to be resolved at that time.
 - Finally, the corrector checked the code, and merged 'experimental' on the master branch.
 </br>
-  - master 
-    - experimental 
-      - alex
-      - mat
-      - max
-      - estel
-      - magid
+  * master 
+    * experimental 
+      * alex
+      * mat
+      * max
+      * estel
+      * magid
 
 ## Sprints
 * **Sprint 1**
