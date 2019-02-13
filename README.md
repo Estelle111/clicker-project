@@ -71,6 +71,7 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 - We worked each of us on a different branche called by our respective names.
 - At each new feature, or major update done, we merged our personal branche to a common one, called 'experimental' (usualy called 'development'). The conflicts had to be resolved at that time.
 - Finally, the corrector checked the code, and merged 'experimental' on the master branch.
+</br>
   - master 
     - experimental 
       - alex
@@ -120,7 +121,11 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 
 ## Challenges
 
-## Known bugs
+* Work with objects - This has been a first time for some of us.
+
+* The NO-IMAGE rule has been a true challenge. To achieve our initial visual objective, we attempted to create visual elements with HTML and CSS.  
+
+* Work in a group ! It required a lot of communication and organization. We also decided to dispatch the tasks as equally as possible in order to let everyone progress and not lean on each person's own proficiency.
 
 ## Commentary
 If you have any comment, recommendation or advice, please feel free to contact us.
