@@ -14,9 +14,15 @@ window.onload = () => {
         game.autoclick.price = getSave.AutoPrice;
         game.autoclick.level = getSave.AutoLevel;
         game.autoclick.bps = getSave.AutoBpS;
+        game.autoBtn = getSave.autoBtn;
+        game.autoclick2.price = getSave.AutoPrice2;
+        game.autoclick2.level = getSave.AutoLevel2;
+        game.autoclick2.bps = getSave.AutoBpS2;
+        game.autoBtn2 = getSave.AutoDisplayBps2;
         game.multiplier.updateAffichageMultiple();
         game.autoclick.updateAffichageAutoclick();
         game.updateAffichageBps(game.autoclick.bps);
+        game.updateAffichageBps(game.autoclick2.bps);
 
     } else {
         // If nothing in memory, start game with score= 0
@@ -32,6 +38,7 @@ window.onload = () => {
         game.updateAffichageScore(game.score);
         game.multiplier.updateAffichageMultiple();
         game.autoclick.updateAffichageAutoclick();
+        game.autoclick2.updateAffichageAutoclick();
         
         // Local data automatic save / 15 seconds interval
 
@@ -39,15 +46,17 @@ window.onload = () => {
             saveGameData();
             game.multiplier.updateAffichageMultiple();
             game.autoclick.updateAffichageAutoclick();
+            game.autoclick2.updateAffichageAutoclick();
         }, 15000);
         
         // Increase score by bps every second
         setInterval(()=>{
-            game.score+=game.autoclick.bps
+            game.score =game.score + game.autoclick.bps + game.autoclick2.bps
             game.checkPrice();
             game.updateAffichageScore(game.score);
             game.multiplier.updateAffichageMultiple();
             game.autoclick.updateAffichageAutoclick();
+            game.autoclick2.updateAffichageAutoclick();
         }, 1000);
         
         // Event Listener for click on reset button
@@ -87,6 +96,17 @@ window.onload = () => {
                 game.updateAffichageBps(autoObject.bps);
             }
         })
+        // Create event listener on autoclick2 button
+        autoObject2 = game.autoclick2
+        game.monkey2.addEventListener("click",() => {
+            if (game.isBuyable(game.score,autoObject2.price) == true) { 
+                game.score = game.payForUpgrade(game.score,autoObject2.price)
+                autoObject2.autoFlow();
+                game.checkPrice();
+                game.updateAffichageScore(game.score);
+                game.updateAffichageBps(autoObject2.bps);
+            }
+        })
 
         // Create event listener on bonus button
         bonusObject = game.bonus
@@ -113,13 +133,16 @@ window.onload = () => {
         this.clickBtn = document.querySelector('#hClick')
         this.grappe = document.querySelector('.bananaGrappe')
         this.multBtn = document.querySelector('#hMultiplier')
-        this.monkey = document.querySelector('.monkey');
+        this.monkey = document.querySelector('#A1');
+        this.monkey2 = document.querySelector('#A2')
         this.autoBtn = document.querySelector('#hAutoclick')
+        this.autoBtn2 = document.querySelector('#hAutoclick2')
         this.bonusBtn = document.querySelector('#hBonus')
         this.resetBtn = document.querySelector('#hReset')
         this.score = score
         this.multiplier = new Multiple(50,1,1)
-        this.autoclick = new Autoclick(20,1,0)
+        this.autoclick = new Autoclick(20,1,0,this.autoBtn)
+        this.autoclick2 = new Autoclick(200,5,0,this.autoBtn2)
         this.bonus = new Bonus()
         // Check if possible buy (score > 0)
         // return false if too expensive, true else
@@ -148,19 +171,19 @@ window.onload = () => {
         }
         // Deactivate buttons if the user has not enough points to buy the upgrade
         this.buttonEnableDisable = function(score, price,btnType){
-            btn = btnType
-            if (game.isBuyable(score,price)){
-                btn.disabled=false;
-                btn.classList.remove('grayOut')
-            }else{
-                btn.disabled = true;
-                btn.classList.add('grayOut')
-            }
+        if (game.isBuyable(score,price)){
+            btnType.disabled=false;
+            btnType.classList.remove('grayOut')
+        }else{
+            btnType.disabled = true;
+            btnType.classList.add('grayOut')
+        }
         }
         // Cycle through each upgrade object and launch the btn_enabler_disabler method
         this.checkPrice = function(){
             game.buttonEnableDisable(game.score,game.multiplier.price,game.grappe)
             game.buttonEnableDisable(game.score,game.autoclick.price,game.monkey) 
+            game.buttonEnableDisable(game.score,game.autoclick2.price,game.monkey2)
         }
     }
 
@@ -181,10 +204,11 @@ window.onload = () => {
         }
     }
 
-    function Autoclick(price, level, bps) {
+    function Autoclick(price, level, bps,displayBps) {
         this.price = price;
         this.level = level;
         this.bps = bps;
+        this.displayBps = displayBps;
         // Function called in the game flow - operates all autoclick changes in one go when the user clicks
         this.autoFlow = function(){
             this.price = Math.round(this.price+(this.price/3)+(this.price%2));
@@ -194,7 +218,7 @@ window.onload = () => {
         }
         // Update autoclick display on index.html
         this.updateAffichageAutoclick = function () {
-            game.autoBtn.innerHTML = game.autoclick.bps.toFixed(0)+' BPS' + ' | ' + game.autoclick.price.toFixed(0);
+            this.displayBps.innerHTML = this.bps.toFixed(0)+' BPS' + ' | ' + this.price.toFixed(0);
         }
     }
 
@@ -232,7 +256,13 @@ window.onload = () => {
             'MultiIncrease':game.multiplier.increase,
             'AutoPrice':game.autoclick.price,
             'AutoLevel':game.autoclick.level,
-            'AutoBpS':game.autoclick.bps
+            'AutoBpS':game.autoclick.bps,
+            'AutoDisplayBps':game.autoBtn,
+            'AutoPrice2':game.autoclick2.price,
+            'AutoLevel2':game.autoclick2.level,
+            'AutoBps2':game.autoclick2.bps,
+            'AutoDisplayBps2':game.autoBtn2
+
         }
         // -> Storage
         localStorage.setItem('saveData', JSON.stringify(saveData));
