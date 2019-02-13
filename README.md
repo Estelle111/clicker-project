@@ -83,21 +83,33 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 	* Autoclick : As soon as you have a score of 20, one click is done automatically every second.
 	* Purchase autoclick : After a score of 20, the autoclick is no longer automatic, you have to buy it.
 	* Disable buttons when there are not enough bananas to buy them.
-	* Bonus
-	* Random time prototype on bonus
+	* Bonus : Create the bonus button. Adds a method that multiplies by 5 the number of bananas per click then divides it by 5 after 5 seconds.
+	* Random time prototype on bonus.
+	* Discussion of the css theme.
 
 * **Sprint 4**
-	* 
-	* 
-	* 
+	* Layout and design
+	* Background
+	* Textures of the boards
+	* Title
+	* Storage score / save
+
 * **Sprint 5**
-	* 
-	* 
-	* 
+	* Ropes
+	* Reset button
+	* Police
+	* Autoclick design
+	* Multiply design
+
 * **Sprint 6**
-	* 
-	* 
-	* 
+	* Create the second object and autoclick button.
+	* Design of the autoclick 2
+	* Bonus animation
+	* Time and appearance random of the bonus
+	* Progress Curve
+	* Debug JS
+	* Correcting the code and adding comments
+	* Updated Readme, Index-list and Bug-list
 
 ## Challenges
 
