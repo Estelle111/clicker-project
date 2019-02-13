@@ -14,10 +14,12 @@ window.onload = () => {
         game.autoclick.price = getSave.AutoPrice;
         game.autoclick.level = getSave.AutoLevel;
         game.autoclick.bps = getSave.AutoBpS;
+        game.autoclick.evol = getSave.AutoEvol;
         game.autoBtn = getSave.autoBtn;
         game.autoclick2.price = getSave.AutoPrice2;
         game.autoclick2.level = getSave.AutoLevel2;
         game.autoclick2.bps = getSave.AutoBpS2;
+        game.autoclick2.evol = getSave.AutoEvol2;
         game.autoBtn2 = getSave.AutoDisplayBps2;
         game.multiplier.updateAffichageMultiple();
         game.autoclick.updateAffichageAutoclick();
@@ -140,8 +142,8 @@ window.onload = () => {
         this.resetBtn = document.querySelector('#hReset')
         this.score = score
         this.multiplier = new Multiple(50,1,1)
-        this.autoclick = new Autoclick(20,1,0,this.autoBtn)
-        this.autoclick2 = new Autoclick(200,5,0,this.autoBtn2)
+        this.autoclick = new Autoclick(20,1,0,this.autoBtn,1)
+        this.autoclick2 = new Autoclick(200,1,0,this.autoBtn2,10)
         this.bonus = new Bonus()
         // Check if possible buy (score > 0)
         // return false if too expensive, true else
@@ -207,16 +209,17 @@ window.onload = () => {
         }
     }
 
-    function Autoclick(price, level, bps,displayBps) {
+    function Autoclick(price, level, bps,displayBps,evol) {
         this.price = price;
         this.level = level;
         this.bps = bps;
         this.displayBps = displayBps;
+        this.evol=evol;
         // Function called in the game flow - operates all autoclick changes in one go when the user clicks
         this.autoFlow = function(){
             this.price = Math.round(this.price+(this.price/3)+(this.price%2));
             this.level = this.level+1;
-            this.bps = this.bps+1;
+            this.bps = this.bps+this.evol;
             this.updateAffichageAutoclick()
         }
         // Update autoclick display on index.html
@@ -264,8 +267,9 @@ window.onload = () => {
             'AutoPrice2':game.autoclick2.price,
             'AutoLevel2':game.autoclick2.level,
             'AutoBpS2':game.autoclick2.bps,
-            'AutoDisplayBps2':game.autoBtn2
-
+            'AutoDisplayBps2':game.autoBtn2,
+            'AutoEvol' :game.autoclick.evol,
+            'AutoEvol2' :game.autoclick2.evol
         }
         // -> Storage
         localStorage.setItem('saveData', JSON.stringify(saveData));
