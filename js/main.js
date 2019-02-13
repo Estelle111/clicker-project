@@ -114,17 +114,18 @@ window.onload = () => {
         setTimeout(() => {
             bonusObject.showBonusRandom()
             },
-            bonusObject.randomTime
+            bonusObject.randomTime()
         )
         game.bonusBtn.addEventListener("click",() => {
             bonusObject.hideBonus()
             // multObject.updateAffichageMultiple()
             console.log(multObject.increase)
+            bonusObject.defineCoord()
             bonusObject.evolBonusIncrease()
             setTimeout(() => {
                 bonusObject.showBonusRandom()
                 },
-                bonusObject.randomTime
+                bonusObject.randomTime()
             )
         })
     }
@@ -145,6 +146,7 @@ window.onload = () => {
         this.autoclick = new Autoclick(20,1,0,this.autoBtn,1)
         this.autoclick2 = new Autoclick(200,1,0,this.autoBtn2,10)
         this.bonus = new Bonus()
+        this.bonus.defineCoord()
         // Check if possible buy (score > 0)
         // return false if too expensive, true else
         this.isBuyable = function(score,price){
@@ -229,7 +231,27 @@ window.onload = () => {
     }
 
     function Bonus() {
-        this.randomTime = 5000 + Math.floor((Math.random() * 10000) + 1)
+        this.xPos = 100
+        this.yPox = 100
+        this.getRandomPosition = function() {  
+            var x = 1400;
+            var y = 600;
+            var randomX = Math.floor(Math.random()*x);
+            var randomY = Math.floor(Math.random()*y);
+            return [randomX,randomY]
+        }
+
+        this.defineCoord = function() {
+            this.btnBonus = document.querySelector('#hBonus')
+            this.xPos = this.getRandomPosition()[0]
+            this.yPos = this.getRandomPosition()[1]
+            this.btnBonus.style.left = this.xPos + 'px'
+            this.btnBonus.style.top = this.yPos + 'px'
+        }
+        this.randomTime = function() {
+            totalRandom = 30000 + Math.floor((Math.random() * 90000) + 1)
+            return totalRandom
+        }
         // Function used to increase the score of the multiplier then decrease after X second
         this.evolBonusIncrease = function () {
             multObject.increase *= 5
@@ -246,7 +268,6 @@ window.onload = () => {
         // Display the bonus button
         this.showBonusRandom = function () {
             game.bonusBtn.style.display = "inline-block"
-            this.randomTime = 5000 + Math.floor((Math.random() * 10000) + 1)
         }
         // Hide the bonus button
         this.hideBonus = function () {

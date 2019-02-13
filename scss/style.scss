@@ -109,10 +109,10 @@ body {
         #hBonus{
             position: fixed;
             cursor: pointer;
-            top: 51vh;
+            top: -1000px;
+            z-index: 30;
             width: 200px;
             height: 200px;
-            margin-left : 163px;
             animation: spin 0.5s linear infinite;
         }
         //animation banane bonus
