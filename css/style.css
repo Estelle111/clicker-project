@@ -954,7 +954,7 @@ body {
 }
 #page .rightColumn .autoplank .auto1Txt {
   position: relative;
-  top: -550px;
+  top: -570px;
   display: flex;
   flex-direction: column;
   z-index: 4;
@@ -969,7 +969,7 @@ body {
 }
 #page .rightColumn .autoplank .auto2Txt {
   position: relative;
-  top: -500px;
+  top: -480px;
   display: flex;
   flex-direction: column;
   z-index: 4;
@@ -980,7 +980,7 @@ body {
   cursor: pointer;
 }
 #page .rightColumn .autoplank .auto2Txt #hAutoclick2 {
-  margin-top: 2vh;
+  margin-top: 4vh;
 }
 
 .reset {
