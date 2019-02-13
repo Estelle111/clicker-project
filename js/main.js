@@ -263,7 +263,7 @@ window.onload = () => {
             'AutoDisplayBps':game.autoBtn,
             'AutoPrice2':game.autoclick2.price,
             'AutoLevel2':game.autoclick2.level,
-            'AutoBps2':game.autoclick2.bps,
+            'AutoBpS2':game.autoclick2.bps,
             'AutoDisplayBps2':game.autoBtn2
 
         }
