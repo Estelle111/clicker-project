@@ -1,6 +1,8 @@
 # Clicker Project
 Welcome to our Clicker project, a game based on Cookie clicker.
 
+[Workflow](##workflow)
+
 ## Guide line
 * Using 
 	* camelCase
@@ -46,7 +48,7 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 * CSS
 * Javascript
 
-## Workflow
+##Workflow
 
 - We worked each of us on a different branche called by our respective names.
 - At each new feature, or major update done, we merged our personal branche to a common one, called 'experimental' (usualy called 'development'). The conflicts had to be resolved at that time.
