@@ -3,7 +3,7 @@ Welcome to our Clicker project, **Jungle Banana Jungle**, a game based on Cookie
 
 ## Summary
 
-- [Guide line](#guide-line)
+- [Guidelines](#guide-line)
   
 - [Tasks assignment](#tasks-assignment)
   
