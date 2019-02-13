@@ -74,13 +74,13 @@ Welcome to our Clicker project, a game based on Cookie clicker.
 
 <br />
 
-    * master 
-      * experimental 
-        * alex
-        * mat
-        * max
-        * estel
-        * magid
+    - master 
+      - experimental 
+        - alex
+        - mat
+        - max
+        - estel
+        - magid
 
 ## Sprints
 * **Sprint 1**
