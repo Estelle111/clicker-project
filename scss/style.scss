@@ -139,6 +139,19 @@ body {
                     margin-top : 2vh;
                 }
             }
+            .auto2Txt{
+                position : relative;
+                top:-500px;
+                display: flex;
+                flex-direction: column;
+                z-index : 4;
+                text-align: center;
+                justify-content: space-around;
+                .monkey2{cursor:pointer}
+                #hAutoclick2{
+                    margin-top : 2vh;
+                }
+            }
         }
     }
 }
@@ -405,6 +418,14 @@ body {
         }
 
     #hAutoclick {
+            text-align: center;
+            color : #eae4cc ; 
+            font-size : 29px ; 
+            font-family: "Westmeath2",arial,sans-serif;
+            // text-shadow: 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61, 0 0 2px #d61;
+        
+        }
+        #hAutoclick2 {
             text-align: center;
             color : #eae4cc ; 
             font-size : 29px ; 

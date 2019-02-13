@@ -4,12 +4,12 @@
     display: block;
     background: none;
     /*border: 1px solid black;*/
-    width: 800px;
-    height: 600px;
+    width: 200px;
+    height: 150px;
     top: 8%;
 }
 
-.head {
+.head2 {
     position: absolute;
     top: 8%;
     left: 25%;
@@ -209,7 +209,7 @@
     width: 25%;
     background: #fff;
     border-radius: 50%;
-    border: 7px solid #000;
+    border: 3px solid #000;
     animation-name: blink;
 }
 
@@ -221,7 +221,7 @@
     width: 25%;
     background: #fff;
     border-radius: 50%;
-    border: 7px solid #000;
+    border: 3px solid #000;
 }
 
 .eyelid {
@@ -231,7 +231,7 @@
     height: 50%;
     width: 101%;
     border-radius: 90px 90px 0 0;
-    border-bottom: 5px solid #000;
+    border-bottom: 3px solid #000;
     background: #a0522d;
     z-index: 1;
     animation-name: blink;
@@ -267,7 +267,7 @@
 
 .pupil {
     position: absolute;
-    top: 40%;
+    top: 41%;
     left: 35%;
     height: 30%;
     width: 30%;
@@ -279,8 +279,8 @@
     position: absolute;
     width: 110%;
     height: 70%;
-    left: -15px;
-    top: 65%;
+    left: -5%;
+    top: 70%;
     border-radius: 30%;
     background: #f4a460;
     z-index: 1;
@@ -293,8 +293,8 @@
     position: absolute;
     width: 99%;
     height: 30%;
-    left: 2%;
-    top: 62%;
+    left: 0%;
+    top: 67%;
     border-radius: 50%;
     background: #f4a460;
     z-index: 1;
@@ -304,7 +304,7 @@
     position: absolute;
     width: 99%;
     height: 30%;
-    left: 2%;
+    left: 1%;
     bottom: -38%;
     border-radius: 50%;
     background: #f4a460;
@@ -315,8 +315,8 @@
     position: absolute;
     width: 60%;
     height: 32%;
-    left: -21%;
-    bottom: -16%;
+    left: -22%;
+    bottom: -21%;
     border-radius: 50%;
     background: #f4a460;
     z-index: 1;
@@ -327,8 +327,8 @@
     position: absolute;
     width: 60%;
     height: 32%;
-    right: -23%;
-    bottom: -16%;
+    right: -22%;
+    bottom: -21%;
     border-radius: 50%;
     background: #f4a460;
     z-index: 1;
@@ -351,8 +351,8 @@
 
 .nostril-left {
     position: absolute;
-    top: 70%;
-    left: 34%;
+    top: 71%;
+    left: 35%;
     background: #2a2422;
     width: 10%;
     height: 5%;
@@ -362,7 +362,7 @@
 
 .nostril-right {
     position: absolute;
-    top: 70%;
+    top: 71%;
     left: 54%;
     background: #2a2422;
     width: 10%;
@@ -371,13 +371,13 @@
     z-index: 1;
 }
 
-.mouth {
+.mouth2 {
     width: 80%;
     height: 40%;
     border-top: 20px solid #fff;
     position: absolute;
     bottom: -23%;
-    left: 11%;
+    left: 10%;
     border-radius: 50%;
     z-index: 1;
     transform: rotate(180deg);
