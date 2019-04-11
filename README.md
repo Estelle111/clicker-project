@@ -1,5 +1,5 @@
 # Clicker Project
-* **After 1 month and 13 days of training**
+* **After 1 month and 6 days of training**
 * Welcome to our Clicker project, **Jungle Banana Jungle**, a game based on Cookie clicker.
 
 ## Summary
